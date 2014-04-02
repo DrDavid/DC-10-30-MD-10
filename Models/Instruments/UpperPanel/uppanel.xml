@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Bombardier CRJ700 series -->
+<!-- Bombardier CRJ700 series --> <!-- Adapted to DC-10-30 Series -->
 <!-- Upper panel -->
 
 <PropertyList>
@@ -8,9 +8,9 @@
 	<path>uppanel.ac</path>
 
 	<panel-marking-emit>
-		<red>1</red>
-		<green>0.871</green>
-		<blue>0.427</blue>
+		<red>4</red>
+		<green>3.484</green>
+		<blue>1.708</blue>
 	</panel-marking-emit>
 	<switch-rotate-deg type="float">35</switch-rotate-deg>
 	<switch-rotate-neg-deg type="float">-35</switch-rotate-neg-deg>
@@ -51,6 +51,20 @@
 
 	<!-- Landing lights -->
 	<animation>
+		<type>material</type>
+		<object-name>LandingLtLSwitch</object-name>
+		<object-name>LandingLtNSwitch</object-name>
+		<object-name>LandingLtRSwitch</object-name>
+		<object-name>TaxiLightSwitch</object-name>
+		<emission>
+			<red>3</red>
+			<green>1.50</green>
+			<blue>1.0</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		</emission>
+	</animation>
+
+	<animation>
 		<type>pick</type>
 		<object-name>LandingLtLSwitch</object-name>
 		<action>
@@ -58,14 +72,14 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/landing-lights[0]</property>
+				<property>controls/lighting/landing-light-port</property>
 			</binding>
 		</action>
 	</animation>
 	<animation>
 		<type>rotate</type>
 		<object-name>LandingLtLSwitch</object-name>
-		<property>controls/lighting/landing-lights[0]</property>
+		<property>controls/lighting/landing-light-port</property>
 		<factor alias="../../switch-rotate-deg" />
 		<axis>
 			<x>0</x>
@@ -87,14 +101,14 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/landing-lights[1]</property>
+				<property>controls/lighting/landing-light-nose</property>
 			</binding>
 		</action>
 	</animation>
 	<animation>
 		<type>rotate</type>
 		<object-name>LandingLtNSwitch</object-name>
-		<property>controls/lighting/landing-lights[1]</property>
+		<property>controls/lighting/landing-light-nose-switch</property>
 		<factor alias="../../switch-rotate-deg" />
 		<axis>
 			<x>0</x>
@@ -116,14 +130,14 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/landing-lights[2]</property>
+				<property>controls/lighting/landing-light-stbd</property>
 			</binding>
 		</action>
 	</animation>
 	<animation>
 		<type>rotate</type>
 		<object-name>LandingLtRSwitch</object-name>
-		<property>controls/lighting/landing-lights[2]</property>
+		<property>controls/lighting/landing-light-stbd</property>
 		<factor alias="../../switch-rotate-deg" />
 		<axis>
 			<x>0</x>
@@ -145,14 +159,14 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>controls/lighting/taxi-lights</property>
+				<property>controls/lighting/landing-light-nose-switch</property>
 			</binding>
 		</action>
 	</animation>
 	<animation>
 		<type>rotate</type>
 		<object-name>TaxiLightSwitch</object-name>
-		<property>controls/lighting/taxi-lights</property>
+		<property>controls/lighting/landing-light-nose-switch</property>
 		<factor alias="../../switch-rotate-deg" />
 		<axis>
 			<x>0</x>

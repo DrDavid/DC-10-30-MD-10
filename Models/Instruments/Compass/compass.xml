@@ -6,12 +6,25 @@
 <PropertyList>
 
 	<path>compass.ac</path>
+	
 
 	<!-- Visible only within 1/2 km -->
 	<animation>
 		<type>range</type>
 		<min-m>0</min-m>
 		<max-m>500</max-m>
+	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>Airplane</object-name>
+		<object-name>Ring</object-name>
+		<emission>
+			<red>1</red>
+			<green>1</green>
+			<blue>1</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		</emission>
 	</animation>
 
 	<animation>

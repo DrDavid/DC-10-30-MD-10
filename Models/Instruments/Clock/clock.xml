@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-	<path>clock.ac</path>
+	<!-- <path>clock.ac</path> -->
 
 	<params>
 		<elapsed-sec>instrumentation/chronometer/elapsed-sec</elapsed-sec>

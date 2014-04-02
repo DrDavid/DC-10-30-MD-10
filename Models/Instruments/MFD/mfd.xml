@@ -5,7 +5,7 @@
 
 <PropertyList>
 
-	<!-- <path>mfd.ac</path> -->
+	<path>mfd.ac</path>
 
 	<params>
 		<page>instrumentation/mfd/page</page>

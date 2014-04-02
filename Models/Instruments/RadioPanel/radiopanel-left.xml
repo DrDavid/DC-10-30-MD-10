@@ -5,7 +5,7 @@
 
 <PropertyList>
 
-	<foo include="radiopanel-main.xml" omit-node="y" />
+	<foo include="radiopanel-main-1.xml" omit-node="y" />
 
 	<text>
 		<name>COM1 text</name>
@@ -911,7 +911,7 @@
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
+		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC-10-30-lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">
@@ -928,6 +928,13 @@
 			</texture>
 		</parameters>
 		<object-name>Panel</object-name>
+	</effect>
+	
+	<!-- Rembrandt !! -->
+	<effect>
+		<name>REMBRANDT transparency</name>
+		<inherits-from>Effects/model-transparent</inherits-from>
+		<object-name>Markings</object-name>
 	</effect>
 
 </PropertyList>

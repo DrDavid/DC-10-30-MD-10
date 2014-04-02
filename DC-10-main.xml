@@ -7,7 +7,7 @@
 <PropertyList>
 
     <sim>
-	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades)</author>
+	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades) 5H1N0B1 (Canvas MFD)</author>
 	<status>beta</status>
         <rating>
             <FDM type="int">2</FDM>
@@ -79,6 +79,11 @@
 		<name>Pushback</name>
 		<path>Aircraft/DC-10-30/Systems/pushback.xml</path>
 	    </autopilot>
+		<nav-display>
+		<name>Navdisplay</name>
+		<path>Aircraft/DC-10-30/Systems/nav-display.xml</path>
+		</nav-display>
+		
 	</systems>
 
 	<view n="0">
@@ -379,152 +384,92 @@
 	    <decision-height-ft type="double">700</decision-height-ft>
 	    <serviceable type="bool">true</serviceable>
 	</radar-altimeter>
-	<tcas n="0">
-		<serviceable type="bool">true</serviceable>
-		<inputs>
-			<mode type="int">3</mode>
-		</inputs>
-		<speaker>
-			<max-dist>2</max-dist>
-			<reference-dist>1</reference-dist>
-			<volume>1</volume>
-		</speaker>
-	</tcas>
-	<tcas n="1">
-		<serviceable type="bool">true</serviceable>
-		<inputs>
-			<mode type="int">3</mode>
-		</inputs>
-		<speaker>
-			<max-dist>2</max-dist>
-			<reference-dist>1</reference-dist>
-			<volume>1</volume>
-		</speaker>
-	</tcas>
-	<radar n="0">
-		<switch type="string">on</switch>
-		<mode-control type="int" archive="y">1</mode-control>
-		<display-mode type="string">plan</display-mode>
-		<display-controls>
-			<WX type="bool">false</WX>
-			<pos type="bool">true</pos>
-			<data type="bool">true</data>
-			<symbol type="bool">true</symbol>
-			<rotate type="bool">true</rotate>
-			<tcas type="bool">true</tcas>
-			<abs-altitude type="bool">false</abs-altitude>
-		</display-controls>
-		<serviceable type="bool">true</serviceable>
-		<range type="int">10</range>
-		<reference-range-nm type="double">640</reference-range-nm>
-		<mode type="string">WX</mode>
+	<mfd>
+		<modeL type="int">0</modeL>
+		<modeR type="int">0</modeR>
+		<dimm-l type="float">1</dimm-l>
+		<dimm-r type="float">1</dimm-r>
+		<inhg-hpa type="bool">0</inhg-hpa>
+		<mfd-glass type="bool">0</mfd-glass>
+		<rmi-1-bearing-deg type="float">0</rmi-1-bearing-deg>
+		<rmi-2-bearing-deg type="float">0</rmi-2-bearing-deg>
+		<rmuL type="int">0</rmuL> 
+		<rmuR type="int">0</rmuR>
+		<wind-display type="bool">0</wind-display>
+		<!-- <eicas>      
+			<n1-real type="string">""</n1-real>
+			<n2-real type="string">""</n2-real>
+			<itt-real type="string">""</itt-real>
+		</eicas> -->
+    </mfd>
+    <!-- <tacan>
+		<ident type="string">""</ident>
+		<frequencies>
+			<stby-can type="int">24</stby-can>
+			<stby-can1 type="string">0</stby-can1>
+			<stby-can2 type="string">X</stby-can2>
+			<XPos type="int">-1</XPos>
+		</frequencies>
+    </tacan> -->
+    <!--Thanks to the CitationX guy !! -->
+    <nd>
+		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Interior/Panel/Instruments/Center-mfd/radar.png</radar-texture-path>
+		<symbol-texture-path type="string">Aircraft/DC-10-30/Models/Interior/Panel/Instruments/Center-mfd/symbols.png</symbol-texture-path>
 		<font>
 			<color>
-				<red type="float">0.7</red>
-				<green type="float">0.7</green>
-				<blue type="float">0.7</blue>
-				<alpha type="float">1</alpha>
+				<red type="float">   0.7 </red>
+				<green type="float"> 0.7 </green>
+				<blue type="float">  0.7 </blue>
+				<alpha type="float"> 1.0 </alpha>
 			</color>
-			<tcas>
-				<!-- distant targets -->
-				<color n="0">
-					<red type="float">0</red>
-					<green type="float">1</green>
-					<blue type="float">1</blue>
-				</color>
-				<!-- proximity targets -->
-				<color>
-					<red type="float">0</red>
-					<green type="float">1</green>
-					<blue type="float">1</blue>
-				</color>
-				<!-- TA threat targets -->
-				<color>
-					<red type="float">1</red>
-					<green type="float">0.5</green>
-					<blue type="float">0</blue>
-				</color>
-				<!-- RA threat targets -->
-				<color>
-					<red type="float">1</red>
-					<green type="float">0</green>
-					<blue type="float">0</blue>
-				</color>
-			</tcas>
 			<name type="string">helvetica_bold.txf</name>
-			<size type="float">5</size>
-			<line-spacing type="float">0.3</line-spacing>
+			<size type="float"> 14 </size>
+			<line-spacing type="float"> 0.01 </line-spacing>
 		</font>
-		<lightning type="bool" archive="y">true</lightning>
-		<display-mode type="string">arc</display-mode>
-		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/MFD/wxradar/od_wxradar0.png</radar-texture-path>
-		<echo-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/MFD/wxradar/wxecho.png</echo-texture-path>
-		<minimized type="bool">false</minimized>
-		<heading-marker type="bool">true</heading-marker>
-		<limit-deg type="int">360</limit-deg>
-	</radar>
-		<radar n="1">
-		<switch type="string">on</switch>
-		<mode-control type="int" archive="y">1</mode-control>
-		<display-mode type="string">plan</display-mode>
-		<display-controls>
-			<WX type="bool">false</WX>
-			<pos type="bool">true</pos>
-			<data type="bool">true</data>
-			<symbol type="bool">true</symbol>
-			<rotate type="bool">true</rotate>
-			<tcas type="bool">true</tcas>
-			<abs-altitude type="bool">false</abs-altitude>
-		</display-controls>
 		<serviceable type="bool">true</serviceable>
-		<range type="int">10</range>
-		<reference-range-nm type="double">640</reference-range-nm>
-		<mode type="string">WX</mode>
-		<font>
-			<color>
-				<red type="float">0.7</red>
-				<green type="float">0.7</green>
-				<blue type="float">0.7</blue>
-				<alpha type="float">1</alpha>
-			</color>
-			<tcas>
-				<!-- distant targets -->
-				<color n="0">
-					<red type="float">0</red>
-					<green type="float">1</green>
-					<blue type="float">1</blue>
-				</color>
-				<!-- proximity targets -->
-				<color>
-					<red type="float">0</red>
-					<green type="float">1</green>
-					<blue type="float">1</blue>
-				</color>
-				<!-- TA threat targets -->
-				<color>
-					<red type="float">1</red>
-					<green type="float">0.5</green>
-					<blue type="float">0</blue>
-				</color>
-				<!-- RA threat targets -->
-				<color>
-					<red type="float">1</red>
-					<green type="float">0</green>
-					<blue type="float">0</blue>
-				</color>
-			</tcas>
-			<name type="string">helvetica_bold.txf</name>
-			<size type="float">5</size>
-			<line-spacing type="float">0.3</line-spacing>
-		</font>
-		<lightning type="bool" archive="y">true</lightning>
-		<display-mode type="string">arc</display-mode>
-		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/MFD/wxradar/od_wxradar0.png</radar-texture-path>
-		<echo-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/MFD/wxradar/wxecho.png</echo-texture-path>
-		<minimized type="bool">false</minimized>
-		<heading-marker type="bool">true</heading-marker>
-		<limit-deg type="int">360</limit-deg>
-	</radar>
+		<range type="int" archive="y"> 20 </range>
+		<aircraft-heading-up type="bool">true</aircraft-heading-up>
+		<heading-up-deg type="float"> 0.01 </heading-up-deg>
+		<x-center type="float"> 0.5 </x-center>
+		<y-center type="float"> 0.5 </y-center>
+		<display>
+			<arpt type="bool"> 1 </arpt>
+			<vor type="bool">  1 </vor>
+			<fix type="bool">  0 </fix>
+			<tcas type="bool"> 0 </tcas>
+		</display>
+		<line-width type="double">3</line-width>
+    </nd>
+    <primus2000>
+		<dc840>
+			<hsi type="bool">      0 </hsi>
+			<wx type="bool">       0 </wx>
+			<et type="bool">       0 </et>
+			<tcas type="bool">     0 </tcas>
+			<acft-sys type="bool"> 0 </acft-sys>
+			<mfd-map type="bool">  1 </mfd-map>
+			<mfd-wx type="bool">   0 </mfd-wx>
+			<norm type="bool">     0  </norm>
+			<abn type="bool">      0 </abn>
+			<emer type="bool">     0 </emer>
+			<skp type="bool">      0 </skp>
+			<pag type="bool">      0 </pag>
+			<rcl type="bool">      0 </rcl>
+			<ent type="bool">      0 </ent>
+		</dc840>
+		<sc840>
+			<nav1ptr type="double">0</nav1ptr>
+			<nav2ptr type="double">0</nav2ptr>
+		</sc840>
+		<!-- <eicas>
+			<serviceable type="bool">1</serviceable>
+		</eicas> -->
+		<mfd>
+			<menu-num type="int">0</menu-num>
+		</mfd>
+		<!-- <pfd>
+		</pfd> -->
+    </primus2000>
 	<!-- <slip-skid-ball n="1">
 	    <serviceable type="bool">true</serviceable>
 	</slip-skid-ball> -->
@@ -548,18 +493,18 @@
 		<category-14 type="int">0</category-14>
 	    </configuration-module>
 	    <inputs>
-		<arinc429>
-		    <decision-height-ncd type="bool">false</decision-height-ncd>
-		    <decision-height type="double">200</decision-height>
-		</arinc429>
+			<arinc429>
+				<decision-height-ncd type="bool">false</decision-height-ncd>
+				<decision-height type="double">200</decision-height>
+			</arinc429>
 	    </inputs>
-	    <speaker>
-		<max-dist>2</max-dist>
-		<reference-dist>1</reference-dist>
-		<volume>0.4</volume>
+		<speaker>
+			<max-dist>2</max-dist>
+			<reference-dist>1</reference-dist>
+			<volume>0.4</volume>
 	    </speaker>
 	    <voice>
-		<file-prefix type="string">Sounds/mk-viii/</file-prefix>
+			<file-prefix type="string">Sounds/mk-viii/</file-prefix>
 	    </voice>
 	</mk-viii>
     </instrumentation>

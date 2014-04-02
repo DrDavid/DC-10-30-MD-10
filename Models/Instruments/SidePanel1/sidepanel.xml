@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Bombardier CRJ700 series -->
+<!-- Bombardier CRJ700 series --><!-- Adapted to DC-10-30 Series -->
 <!-- Side panel 1 -->
 
 <PropertyList>
@@ -55,6 +55,23 @@
 			<factor-prop>controls/lighting/panel-norm</factor-prop>
 		</emission>
 	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>FormatKnob</object-name>
+		<object-name>RangeKnob</object-name>
+		<object-name>RadarTerrainBtn</object-name>
+		<object-name>TrafficBtn</object-name>
+		<object-name>NavSourceKnob</object-name>
+		<object-name>TrafficBtnOn</object-name>
+		<object-name>RadarTerrainBtnOn</object-name>
+		<emission>
+			<red>0.50</red>
+			<green>0.75</green>
+			<blue>0.75</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		</emission>
+	</animation>
 
 	<!-- Display control panel -->
 	<animation>
@@ -66,15 +83,12 @@
 			<binding>
 				<command>property-cycle</command>
 				<property alias="../../../../params/mfd-page" />
-				<!--value>1</value>
+				<value>1</value>
 				<value>2</value>
 				<value>3</value>
 				<value>4</value>
 				<value>5</value>
-				<value>6</value-->
-				<value>1</value>
-				<value>2</value>
-				<value>3</value>
+				<value>6</value>
 			</binding>
 		</action>
 		<action>
@@ -83,12 +97,9 @@
 			<binding>
 				<command>property-cycle</command>
 				<property alias="../../../../params/mfd-page" />
-				<!--value>6</value>
+				<value>6</value>
 				<value>5</value>
 				<value>4</value>
-				<value>3</value>
-				<value>2</value>
-				<value>1</value-->
 				<value>3</value>
 				<value>2</value>
 				<value>1</value>
@@ -275,7 +286,7 @@
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
+		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC-10-30-lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">

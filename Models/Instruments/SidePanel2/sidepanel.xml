@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Bombardier CRJ700 series -->
+<!-- Bombardier CRJ700 series --> <!-- Adapted for DC-10-30 -->
 <!-- Side panel 2 -->
 
 <PropertyList>
@@ -8,7 +8,7 @@
 	<path>sidepanel.ac</path>
 
 	<params>
-		<wiper>controls/anti-ice/wiper</wiper>
+		<!-- <wiper>controls/anti-ice/wiper</wiper> -->
 		<lightmap-texture-path>Aircraft/Generic/generic-lightmap.png</lightmap-texture-path>
 	</params>
 
@@ -39,6 +39,19 @@
 			<green alias="../../../panel-marking-emit/green" />
 			<blue alias="../../../panel-marking-emit/blue" />
 			<factor-prop>controls/lighting/panel-norm</factor-prop>
+		</emission>
+	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>DisplayLts</object-name>
+		<object-name>PanelLts</object-name>
+		<object-name>FloodLts</object-name>
+		<emission>
+			<red>0.50</red>
+			<green>0.75</green>
+			<blue>0.75</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
 		</emission>
 	</animation>
 
@@ -228,7 +241,7 @@
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
+		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC-10-30-lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">
