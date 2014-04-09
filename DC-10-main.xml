@@ -7,7 +7,7 @@
 <PropertyList>
 
     <sim>
-	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades) 5H1N0B1 (Canvas MFD)</author>
+	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades) 5H1N0B1 and Philosopher (Canvas MFD)</author>
 	<status>gamma</status>
         <rating>
             <FDM type="int">2</FDM>
@@ -461,8 +461,8 @@
     </tacan> -->
     <!--Thanks to the CitationX guy !! -->
     <nd>
-		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Interior/Panel/Instruments/Center-mfd/radar.png</radar-texture-path>
-		<symbol-texture-path type="string">Aircraft/DC-10-30/Models/Interior/Panel/Instruments/Center-mfd/symbols.png</symbol-texture-path>
+		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/Center-mfd/radar.png</radar-texture-path>
+		<symbol-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/Center-mfd/symbols.png</symbol-texture-path>
 		<font>
 			<color>
 				<red type="float">   0.7 </red>
