@@ -8,7 +8,7 @@
 
     <sim>
 	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades) 5H1N0B1 (Canvas MFD)</author>
-	<status>beta</status>
+	<status>gamma</status>
         <rating>
             <FDM type="int">2</FDM>
             <systems type="int">3</systems>
@@ -57,31 +57,31 @@
 	<systems>
 	    <!-- Disable the generic electrical system -->
 	    <electrical>
-		<path></path>
+			<path></path>
 	    </electrical>
 	    <autopilot>
-		<name>Autopilot system</name>
-		<path>Aircraft/DC-10-30/Systems/DC-10-autopilot.xml</path>
+			<name>Autopilot system</name>
+			<path>Aircraft/DC-10-30/Systems/DC-10-autopilot.xml</path>
 	    </autopilot>
 	    <autopilot>
-		<name>Autoland</name>
-		<path>Aircraft/DC-10-30/Systems/DC-10-autoland.xml</path>
+			<name>Autoland</name>
+			<path>Aircraft/DC-10-30/Systems/DC-10-autoland.xml</path>
 	    </autopilot>
 	    <autopilot>
-		<name>Automatic braking system</name>
-		<path>Aircraft/DC-10-30/Systems/DC-10-autobrakes.xml</path>
+			<name>Automatic braking system</name>
+			<path>Aircraft/DC-10-30/Systems/DC-10-autobrakes.xml</path>
 	    </autopilot>
 	    <autopilot>
-		<name>Flight controls</name>
-		<path>Aircraft/DC-10-30/Systems/DC-10-flight-controls.xml</path>
+			<name>Flight controls</name>
+			<path>Aircraft/DC-10-30/Systems/DC-10-flight-controls.xml</path>
 	    </autopilot>
 	    <autopilot>
-		<name>Pushback</name>
-		<path>Aircraft/DC-10-30/Systems/pushback.xml</path>
+			<name>Pushback</name>
+			<path>Aircraft/DC-10-30/Systems/pushback.xml</path>
 	    </autopilot>
 		<nav-display>
-		<name>Navdisplay</name>
-		<path>Aircraft/DC-10-30/Systems/nav-display.xml</path>
+			<name>Navdisplay</name>
+			<path>Aircraft/DC-10-30/Systems/nav-display.xml</path>
 		</nav-display>
 		
 	</systems>
@@ -384,6 +384,54 @@
 	    <decision-height-ft type="double">700</decision-height-ft>
 	    <serviceable type="bool">true</serviceable>
 	</radar-altimeter>
+	<!-- <rwr>
+		<display-lighting-intens type="double">0.4</display-lighting-intens>
+			<symbology-lighting-intens type="double">1</symbology-lighting-intens>
+    </rwr> -->
+    <!-- <enav><selected type="int">3</selected></enav> -->
+    <radar>
+		<range type="int" archive="y">20</range>
+		<range-factor type="double" archive="n">0.001888</range-factor>
+		<minimized type="bool" archive="y">false</minimized>
+		<selected type="int">3</selected>
+		<!-- inicio en pruebas -->
+		<enabled type="bool">true</enabled>
+		<az-field type="double">120</az-field>
+		<range type="double">150</range>
+		<range-selected type="double">20</range-selected>
+		<radar2-range type="double">150</radar2-range>
+		<display-rdr type="bool">true</display-rdr>
+		<radar-standby type="int">0</radar-standby>
+		<mode>
+			<rws type="bool">true</rws>
+			<tws-auto type="bool">false</tws-auto>
+		</mode>
+    </radar>
+    <!-- <radar2>
+		<sweep-width-m type="double">0.0844</sweep-width-m>
+		<range-width-m type="double">0.0846</range-width-m>
+		<radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
+		<hud-eye-dist-m type="double">0.766</hud-eye-dist-m>
+		<hud-radius-m type="double">0.071</hud-radius-m>
+		<hud-vertical-offset-m type="double">-0.025</hud-vertical-offset-m>
+    </radar2>
+    <terrain-radar>
+		<hi-elev>
+			<alt-ft type="double">  -9999.9 </alt-ft>
+			<lat-deg type="double"> -9999.9 </lat-deg>
+			<lon-deg type="double"> -9999.9 </lon-deg>
+			<dist-m type="double">  -9999.9 </dist-m>
+			<collision-status type="string">initialised</collision-status>
+		</hi-elev>
+		<settings>
+			<mode type="string">extend</mode>
+			<state type="string">off</state>
+			<range-m type="double">2500</range-m>
+			<step-m type="double">250</step-m>
+			<max-climb-rate-fps type="double">120</max-climb-rate-fps>
+			<hi-elev-markers type="bool">false</hi-elev-markers>
+		</settings>
+    </terrain-radar> -->
 	<mfd>
 		<modeL type="int">0</modeL>
 		<modeR type="int">0</modeR>
@@ -467,8 +515,8 @@
 		<mfd>
 			<menu-num type="int">0</menu-num>
 		</mfd>
-		<!-- <pfd>
-		</pfd> -->
+		<pfd>
+		</pfd>
     </primus2000>
 	<!-- <slip-skid-ball n="1">
 	    <serviceable type="bool">true</serviceable>
@@ -609,7 +657,7 @@
 		<binding>
 		    <command>nasal</command>
 		    <script>
-			DC10.announce_autobrake ();
+			DC10.announce_autobrake();
 		    </script>
 		</binding>
 	    </key>
@@ -661,6 +709,9 @@
 		<m877>
 			<file>Aircraft/Instruments-3d/clock/M877/m877.nas</file>
 		</m877>
+		<radardist>
+			<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+		</radardist>
     </nasal>
 
 </PropertyList>

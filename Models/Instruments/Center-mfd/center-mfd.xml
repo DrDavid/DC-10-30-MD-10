@@ -67,7 +67,8 @@
     </emission>
   </animation>
   
-  <animation>
+
+ <!-- <animation>
 	<type>pick</type>
 	<object-name>blackbkd</object-name>
 	<action>
@@ -78,8 +79,7 @@
 			<script>DC10.showNd();</script>
 		</binding>
 	</action>
-  </animation>
-  
+  </animation> -->
   
 <!--######################## Change display mode  ############################-->
   <animation>
@@ -109,7 +109,7 @@
        <binding>
           <command>property-cycle</command>
           <property>/instrumentation/efis/mfd/display-type</property>
-          <value>CRT</value>
+          <!--<value>CRT</value> -->
           <value>LCD</value>
        </binding>
     </action>
@@ -128,7 +128,21 @@
        </binding>
     </action>
   </animation>
-
+  
+ <!--######################## Way Point Data ########################-->
+  
+  <animation>
+    <type>pick</type>
+    <object-name>bt-b4</object-name>
+    <visible>true</visible>
+    <action>
+       <button>0</button>
+       <binding>
+          <command>property-toggle</command>
+          <property>/instrumentation/efis/inputs/data</property>
+       </binding>
+    </action>
+  </animation>
 
 <!--######################## Airports ############################-->
   <animation>
@@ -144,7 +158,7 @@
     </action>
   </animation>
 
-<!--######################## Display way point data ############################-->
+<!--######################## Traffic ############################-->
   <animation>
     <type>pick</type>
     <object-name>bt-h2</object-name>
@@ -153,7 +167,7 @@
         <button>0</button>
         <binding>
            <command>property-toggle</command>
-           <property>/instrumentation/efis/inputs/data</property>
+           <property>/instrumentation/efis/inputs/tfc</property>
            <value>true</value>
            <value>false</value>
         </binding>

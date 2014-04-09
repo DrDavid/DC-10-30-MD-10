@@ -5,7 +5,7 @@
 
 <!-- Many, many thanks to Ryan Miller for the creation and development of the outstanding DC-10-30 and its variants! -->
 <!-- Full credit is most gratefully acknowledged to the various developers of the instruments used to create this flightdeck revision -->
-<!-- PFD, MFD, EICAS, Standby PFD, CDU, Side Panels, Radio Panels Upper Light Switch Panel, and other components: adapted and installed from CRJ-700 Family; by David Waggoner, 21Jan14 -->
+<!-- PFD, MFD-CRJ, EICAS, Standby PFD, CDU, Side Panels, Radio Panels Upper Light Switch Panel, and other components: adapted and installed from CRJ-700 Family; by David Waggoner, 21Jan14 -->
 <!-- 100K Altimeter, RMI, RALT, VOR: adapted and installed from Cessna Citation I; by David Waggoner, 21Jan14 -->
 <!-- KLN-90B GPS: adapted and installed from Beechcraft 1900D; by David Waggoner, 21Jan14 -->
 
@@ -48,10 +48,10 @@
 		</offsets>
 	</model>
 	
-	<!-- MFD Multifunction Flight Display -->
+	<!-- MFD-CRJ Multifunction Flight Display -->
 	
 	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/MFD/mfd.xml</path>
+		<path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/mfd.xml</path>
 		<overlay>
 			<params>
 				<page>instrumentation/mfd[0]/page</page>
@@ -60,7 +60,7 @@
 				<indicated-heading-deg>instrumentation/heading-indicator[0]/indicated-heading-deg</indicated-heading-deg>
 				<true-airspeed-kt>instrumentation/airspeed-indicator[0]/true-speed-kt</true-airspeed-kt>
 				<radar-range>instrumentation/radar[0]/range</radar-range>
-				<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD/radar0.xml</radar-path>
+				<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/radar0.xml</radar-path>
 				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/mfd-right-lightmap.png</lightmap-texture-path>
 			</params>
 		</overlay>
@@ -72,7 +72,7 @@
 		</offsets> -->
 	</model>
 	
-	<!-- Center MFD Canvas NavDisplay -->
+	<!-- Center MFD-CRJ Canvas NavDisplay -->
 	
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/center-mfd.xml</path>
@@ -84,7 +84,7 @@
 		</offsets>
 	</model>
 	
-	<!-- MFD Center -->
+	<!-- MFD-CRJ Center -->
 	<!-- <model>
 		<name>MFD_Center</name>
 		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/MFD3d.xml</path>
@@ -768,7 +768,7 @@
 		</offsets>
 	</model>
 	
-	<!-- MFD Multifunction Flight Display -->
+	<!-- MFD-CRJ Multifunction Flight Display -->
 	
 		<!-- <offsets>
 			<x-m>-3.045</x-m>
@@ -823,7 +823,7 @@
 	
 	
 	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/MFD/mfd.xml</path>
+		<path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/mfd.xml</path>
 		<overlay>
 			<params>
 				<page>instrumentation/mfd[0]/page</page>
@@ -832,7 +832,7 @@
 				<indicated-heading-deg>instrumentation/heading-indicator[0]/indicated-heading-deg</indicated-heading-deg>
 				<true-airspeed-kt>instrumentation/airspeed-indicator[0]/true-speed-kt</true-airspeed-kt>
 				<radar-range>instrumentation/radar[0]/range</radar-range>
-				<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD/radar0.xml</radar-path>
+				<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/radar0.xml</radar-path>
 				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/mfd-right-lightmap.png</lightmap-texture-path>
 			</params>
 		</overlay>
