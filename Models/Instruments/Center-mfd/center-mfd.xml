@@ -68,7 +68,7 @@
   </animation>
   
 
- <!-- <animation>
+ <animation>
 	<type>pick</type>
 	<object-name>blackbkd</object-name>
 	<action>
@@ -79,7 +79,7 @@
 			<script>DC10.showNd();</script>
 		</binding>
 	</action>
-  </animation> -->
+  </animation>
   
 <!--######################## Change display mode  ############################-->
   <animation>
