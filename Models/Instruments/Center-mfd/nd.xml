@@ -1,34 +1,48 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Syd Adams
+777-200 Navigation display
+-->
 
 <PropertyList>
 
-<name>Nav Panel</name>
-<background>Aircraft/DC-10-30/Models/Instruments/Center-mfd/transparent.png</background>
-<w>512</w>
-<h>602</h>
+ <path>efis-ct1.ac</path>
 
-  <instruments>
-    <instrument include="Aircraft/DC-10-30/Models/Instruments/Center-mfd/nd1.xml">
-      <condition>
-        <property>instrumentation/nd/serviceable</property>
-      </condition>
-	</instrument>
+    <panel>
+        <path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/mfd-panel.xml</path>
+        <bottom-left>
+            <x-m>0.003</x-m>
+            <y-m>-0.090</y-m>
+            <z-m>-0.087</z-m>
+        </bottom-left>
+        <bottom-right>
+            <x-m>0.003</x-m>
+            <y-m>0.090</y-m>
+            <z-m>-0.087</z-m>
+        </bottom-right>
+        <top-left>
+            <x-m>0.003</x-m>
+            <y-m>-0.090</y-m>
+            <z-m>0.094</z-m>
+        </top-left>
+    </panel>
 
-	<instrument include="Aircraft/DC-10-30/Models/Instruments/Center-mfd/nd2.xml">
-      <condition>
-        <property>instrumentation/nd/serviceable</property>
-      </condition>
-    </instrument>
-
-    <instrument include="Aircraft/DC-10-30/Models/Instruments/Center-mfd/tcas1.xml">
-      <condition>
-        <and>
-            <property>instrumentation/nd/serviceable</property>
-            <property>instrumentation/primus2000/dc840/tcas</property>
-        </and>
-      </condition>
-    </instrument>
-
-  </instruments>
+    <panel>
+        <path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/mfdtext-panel.xml</path>
+        <bottom-left>
+            <x-m>0.005</x-m>
+            <y-m>-0.090</y-m>
+            <z-m>-0.087</z-m>
+        </bottom-left>
+        <bottom-right>
+            <x-m>0.005</x-m>
+            <y-m>0.090</y-m>
+            <z-m>-0.087</z-m>
+        </bottom-right>
+        <top-left>
+            <x-m>0.005</x-m>
+            <y-m>-0.090</y-m>
+            <z-m>0.094</z-m>
+        </top-left>
+    </panel>
 
 </PropertyList>

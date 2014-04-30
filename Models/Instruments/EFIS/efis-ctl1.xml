@@ -5,7 +5,7 @@ Syd Adams
 
 <PropertyList>
 
- <!-- <path>efis-ctl.ac</path> -->
+ <path>efis-ctl.ac</path>
 
 	<effect>
 		<inherits-from>Effects/model-transparent</inherits-from>
@@ -39,7 +39,7 @@ Syd Adams
 			<red>0.2</red>
 			<green>0.8</green>
 			<blue>0.2</blue>
-			<factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+			<factor-prop>controls/lighting/panel-flood-intensity</factor-prop>
 		</emission>
 	</animation>
 
@@ -105,7 +105,7 @@ Syd Adams
     <animation>
         <type>rotate</type>
         <object-name>MODE.knob</object-name>
-        <property>instrumentation/efis/mfd/mode-num</property>
+        <property>instrumentation/efis/MFD-CRJ/mode-num</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
             <entry><ind>1</ind><dep>30</dep></entry>

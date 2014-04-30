@@ -43,10 +43,10 @@
 			</greater-than-equals>
 		</condition>
 		<emission>
-			<red>1</red>
-			<green>0.965</green>
-			<blue>0.42</blue>
-			<factor-prop>instrumentation/standby/brightness-norm</factor-prop>
+			<red>1.5</red>
+			<green>1.965</green>
+			<blue>1.42</blue>
+			<factor-prop>controls/lighting/display-norm</factor-prop>
 		</emission>
 	</animation>
 

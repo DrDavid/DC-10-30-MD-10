@@ -533,9 +533,7 @@
 		<character-size>0.004</character-size>
 		<character-aspect-ratio>1.5</character-aspect-ratio>
 		<font>helvetica_bold.txf</font>
-		<text>N
-E
-G</text>
+		<text>NEG</text>
 		<offsets>
 			<x-m>0.0003</x-m>
 			<y-m>0.0467</y-m>
@@ -1730,7 +1728,7 @@ G</text>
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/CRJ700-family/Models/Effects/CRJ700lightmap</inherits-from>
+		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">

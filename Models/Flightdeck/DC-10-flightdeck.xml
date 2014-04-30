@@ -152,6 +152,42 @@
 		</offsets>
 	</model>
 	
+	<!-- EFIS -->
+	
+	<model>
+        <name>CTL1</name>
+        <path>Aircraft/777/Models/Instruments/EFIS/efis-ctl1.xml</path>
+        <offsets>
+            <x-m>-3.029</x-m>
+            <y-m>-0.4125</y-m>
+            <z-m>0.779</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+
+    <model>
+        <name>CTL2</name>
+        <path>Aircraft/777/Models/Instruments/EFIS/efis-ctl2.xml</path>
+        <offsets>
+            <x-m>-3.029</x-m>
+            <y-m>0.4125</y-m>
+            <z-m>0.779</z-m>
+            <pitch-deg>-10</pitch-deg>
+        </offsets>
+    </model>
+	
+	<!-- Multi-Control Panel -->
+	
+	<model>
+		<path>Aircraft/DC-10-30/Models/Instruments/MCP/mcp.xml</path>
+		<offsets>
+			<x-m>-3.035</x-m>
+			<y-m>0</y-m>
+			<z-m>1.124</z-m>
+			<pitch-deg>-10</pitch-deg>
+		</offsets>
+	</model>
+	
 	<!-- Air Speed Indicator with Mach Reading -->
 	
 	<model>
@@ -443,15 +479,8 @@
 	</model>
 	<!-- Shared instruments -->
 	
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/MCP/mcp.xml</path>
-		<offsets>
-			<x-m>-3.035</x-m>
-			<y-m>0</y-m>
-			<z-m>1.124</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model>
+	
+	
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/UpperPanel/uppanel.xml</path>
 		<offsets>
@@ -478,7 +507,7 @@
 			<pitch-deg>67</pitch-deg>
 		</offsets>
 	</model>
-	<model>
+	<!-- <model>
 		<path>Aircraft/DC-10-30/Models/Instruments/SidePanel2/sidepanel.xml</path>
 		<overlay>
 			<params>
@@ -491,7 +520,7 @@
 			<z-m>0.706</z-m>
 			<pitch-deg>-87</pitch-deg>
 		</offsets>
-	</model>
+	</model> -->
 	
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/SidePanel2/sidepanel.xml</path>
@@ -538,7 +567,7 @@
 			<pitch-deg>-82.0</pitch-deg>
 		</offsets>
 	</model>
-	<model>
+	<!-- <model>
 		<path>Aircraft/DC-10-30/Models/Instruments/CDU/cdu.xml</path>
 		<overlay>
 			<params>
@@ -565,11 +594,11 @@
 			<z-m>0.633</z-m>
 			<pitch-deg>-88</pitch-deg>
 		</offsets>
-	</model>
+	</model> -->
 	
 	<!-- Gear Lever --><!-- Not rendered -->
 	
-	<animation>
+	<!-- <animation>
 		<type>pick</type>
 		<object-name>GearLever</object-name>
 		<action>
@@ -596,10 +625,10 @@
 			<y-m>0</y-m>
 			<z-m>0.674</z-m>
 		</center>
-	</animation>
+	</animation> -->
 
 	<!-- GPWS overrides --><!-- Not Rendered -->
-	<animation>
+	<!-- <animation>
 		<type>pick</type>
 		<object-name>GPWSTerrain</object-name>
 		<object-name>GPWSTerrainOff</object-name>
@@ -662,7 +691,7 @@
 		<condition>
 			<property>instrumentation/mk-viii/inputs/discretes/momentary-flap-override</property>
 		</condition>
-	</animation>
+	</animation> -->
 	
 	
 	
@@ -731,7 +760,7 @@
 
 	<!-- Copilot-side instruments -->
 	
-	<model>
+	<!-- <model>
 		<path>Aircraft/DC-10-30/Models/Instruments/KLN90B/kln90b.xml</path>
 		<offsets>
 			<x-m>-3.000</x-m>
@@ -739,7 +768,7 @@
 			<z-m>1.120</z-m>
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
-	</model>
+	</model> -->
 	
 	<!-- PFD Primary Flight Display -->
 	
@@ -1300,7 +1329,7 @@
 	</model>
 	
 	<!-- Parking brake -->  <!-- Flightdeck does not render a parking brake.  DW. -->
-	<animation>
+	<!-- <animation>
 		<type>pick</type>
 		<object-name>ParkingBrake</object-name>
 		<action>
@@ -1330,7 +1359,7 @@
 			<y-m>0</y-m>
 			<z-m>0.522</z-m>
 		</center>
-	</animation>
+	</animation> -->
 
 	<!-- Elevator trim -->
 	<animation>

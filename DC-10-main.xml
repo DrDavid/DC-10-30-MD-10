@@ -18,25 +18,25 @@
 
 	<model>
 	    <door>
-		<position-x-m type="float">-22.647</position-x-m>
-		<position-y-m type="float">-2.312</position-y-m>
-		<position-z-m type="float">4.746</position-z-m>
-		<jetway-hood-deg type="float">2</jetway-hood-deg>
+			<position-x-m type="float">-22.647</position-x-m>
+			<position-y-m type="float">-2.312</position-y-m>
+			<position-z-m type="float">4.746</position-z-m>
+			<jetway-hood-deg type="float">2</jetway-hood-deg>
 	    </door>
 	    <door>
-		<position-x-m type="float">-13.006</position-x-m>
-		<position-y-m type="float">-2.944</position-y-m>
-		<position-z-m type="float">4.746</position-z-m>
-		<jetway-hood-deg type="float">1</jetway-hood-deg>
+			<position-x-m type="float">-13.006</position-x-m>
+			<position-y-m type="float">-2.944</position-y-m>
+			<position-z-m type="float">4.746</position-z-m>
+			<jetway-hood-deg type="float">1</jetway-hood-deg>
 	    </door>
 	    <livery>
-		<registration type="string" />
-		<has-center-gear type="bool">true</has-center-gear>
+			<registration type="string" />
+			<has-center-gear type="bool">true</has-center-gear>
 	    </livery>
 	    <pushback>
-		<kp type="double">0.05</kp>
-		<ti type="double">10</ti>
-		<td type="double">0.00001</td>
+			<kp type="double">0.05</kp>
+			<ti type="double">10</ti>
+			<td type="double">0.00001</td>
 	    </pushback>
 	</model>
 
@@ -384,82 +384,46 @@
 	    <decision-height-ft type="double">700</decision-height-ft>
 	    <serviceable type="bool">true</serviceable>
 	</radar-altimeter>
-	<!-- <rwr>
-		<display-lighting-intens type="double">0.4</display-lighting-intens>
-			<symbology-lighting-intens type="double">1</symbology-lighting-intens>
-    </rwr> -->
-    <!-- <enav><selected type="int">3</selected></enav> -->
-    <radar>
-		<range type="int" archive="y">20</range>
-		<range-factor type="double" archive="n">0.001888</range-factor>
-		<minimized type="bool" archive="y">false</minimized>
-		<selected type="int">3</selected>
-		<!-- inicio en pruebas -->
-		<enabled type="bool">true</enabled>
-		<az-field type="double">120</az-field>
-		<range type="double">150</range>
-		<range-selected type="double">20</range-selected>
-		<radar2-range type="double">150</radar2-range>
-		<display-rdr type="bool">true</display-rdr>
-		<radar-standby type="int">0</radar-standby>
-		<mode>
-			<rws type="bool">true</rws>
-			<tws-auto type="bool">false</tws-auto>
-		</mode>
-    </radar>
-    <!-- <radar2>
-		<sweep-width-m type="double">0.0844</sweep-width-m>
-		<range-width-m type="double">0.0846</range-width-m>
-		<radius-ppi-display-m type="double">0.0846</radius-ppi-display-m>
-		<hud-eye-dist-m type="double">0.766</hud-eye-dist-m>
-		<hud-radius-m type="double">0.071</hud-radius-m>
-		<hud-vertical-offset-m type="double">-0.025</hud-vertical-offset-m>
-    </radar2>
-    <terrain-radar>
-		<hi-elev>
-			<alt-ft type="double">  -9999.9 </alt-ft>
-			<lat-deg type="double"> -9999.9 </lat-deg>
-			<lon-deg type="double"> -9999.9 </lon-deg>
-			<dist-m type="double">  -9999.9 </dist-m>
-			<collision-status type="string">initialised</collision-status>
-		</hi-elev>
-		<settings>
-			<mode type="string">extend</mode>
-			<state type="string">off</state>
-			<range-m type="double">2500</range-m>
-			<step-m type="double">250</step-m>
-			<max-climb-rate-fps type="double">120</max-climb-rate-fps>
-			<hi-elev-markers type="bool">false</hi-elev-markers>
-		</settings>
-    </terrain-radar> -->
-	<mfd>
-		<modeL type="int">0</modeL>
-		<modeR type="int">0</modeR>
-		<dimm-l type="float">1</dimm-l>
-		<dimm-r type="float">1</dimm-r>
-		<inhg-hpa type="bool">0</inhg-hpa>
-		<mfd-glass type="bool">0</mfd-glass>
-		<rmi-1-bearing-deg type="float">0</rmi-1-bearing-deg>
-		<rmi-2-bearing-deg type="float">0</rmi-2-bearing-deg>
-		<rmuL type="int">0</rmuL> 
-		<rmuR type="int">0</rmuR>
-		<wind-display type="bool">0</wind-display>
-		<!-- <eicas>      
-			<n1-real type="string">""</n1-real>
-			<n2-real type="string">""</n2-real>
-			<itt-real type="string">""</itt-real>
-		</eicas> -->
-    </mfd>
-    <!-- <tacan>
-		<ident type="string">""</ident>
-		<frequencies>
-			<stby-can type="int">24</stby-can>
-			<stby-can1 type="string">0</stby-can1>
-			<stby-can2 type="string">X</stby-can2>
-			<XPos type="int">-1</XPos>
-		</frequencies>
-    </tacan> -->
-    <!--Thanks to the CitationX guy !! -->
+	<tcas>
+		<serviceable type="bool">true</serviceable>
+		<inputs>
+			<mode type="int">0</mode>       <!-- 0=off, 1=standby, 2=TA-only, 3=auto(TA/RA) -->
+		</inputs>
+		<!--voice>
+			<file-prefix type="string">Sounds/tcas/</file-prefix>
+		</voice-->
+		<speaker>                           <!-- Speaker Configuration -->
+			<max-dist type="double"> 200.0 </max-dist>        <!-- Max. distance where speaker is heard -->
+			<reference-dist type="double"> 2 </reference-dist> <!-- Distance to pilot -->
+			<volume type="double"> 1 </volume>          <!-- Volume at reference distance -->
+		</speaker>
+	</tcas>
+	<efis>
+		<inputs>
+			<tfc  type="bool">false</tfc>
+			<sta  type="bool">false</sta>
+			<arpt type="bool">false</arpt>
+			<wpt  type="bool">false</wpt>
+			<wxr  type="bool">false</wxr>
+			<range-nm type="int">10</range-nm>
+		</inputs>
+		<mfd>
+			<display-type type="string">LCD</display-type>
+		</mfd>
+	</efis>
+	<efis n="1">
+		<inputs>
+			<tfc  type="bool">false</tfc>
+			<sta  type="bool">false</sta>
+			<arpt type="bool">false</arpt>
+			<wpt  type="bool">false</wpt>
+			<wxr  type="bool">false</wxr>
+			<range-nm type="int">10</range-nm>
+		</inputs>
+		<mfd>
+			<display-type type="string">LCD</display-type>
+		</mfd>
+	</efis>
     <nd>
 		<radar-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/Center-mfd/radar.png</radar-texture-path>
 		<symbol-texture-path type="string">Aircraft/DC-10-30/Models/Instruments/Center-mfd/symbols.png</symbol-texture-path>
@@ -693,6 +657,8 @@
 			<file>Aircraft/DC-10-30/Nasal/cdu.nas</file>
 		</interactive_cdu>
 		<DC10>
+			<file>Aircraft/DC-10-30/Models/Instruments/Center-mfd/ND.nas</file>
+			<file>Aircraft/777/Models/InstrumentsCenter-mfd/mfd.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/electrical.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/engines.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/effects.nas</file>
@@ -700,8 +666,6 @@
 			<file>Aircraft/DC-10-30/Nasal/instrumentation.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/multiplayer.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/systems.nas</file>
-			<file>Aircraft/DC-10-30/Nasal/vnav.nas</file>
-			<file>Aircraft/DC-10-30/Models/Instruments/Center-mfd/ND.nas</file>
 		</DC10>
 		<systems>
 			<file>Aircraft/b1900d/Models/Instruments/KLN90B/kln90b.nas</file>
@@ -709,9 +673,6 @@
 		<m877>
 			<file>Aircraft/Instruments-3d/clock/M877/m877.nas</file>
 		</m877>
-		<radardist>
-			<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-		</radardist>
     </nasal>
 
 </PropertyList>
