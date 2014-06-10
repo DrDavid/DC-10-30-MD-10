@@ -84,58 +84,6 @@
 		</offsets>
 	</model>
 	
-	<!-- MFD-CRJ Center -->
-	<!-- <model>
-		<name>MFD_Center</name>
-		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/MFD3d.xml</path>
-		<offsets>
-			<x-m>-3.051</x-m>
-			<y-m>-0.4135</y-m>
-			<z-m>0.937</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-  
-	<!-- <animation>
-		<type>scale</type>
-		<object-name>MFD_Center</object-name> 
-		<x-offset> 1.00	</x-offset>
-		<y-offset> 0.82 </y-offset>
-		<z-offset> 0.67 </z-offset>
-	</animation> -->
-  
-	<!-- <model>
-		<name>MFD_Center_border</name>
-		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/center-mfd.xml</path>
-		<offsets>
-			<x-m>-3.051</x-m>
-			<y-m>-0.4135</y-m>
-			<z-m>0.937</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-
-	<!-- <animation>
-		<type>scale</type>
-		<object-name>MFD_Center_border</object-name> 
-		<x-offset> 1.00 </x-offset>
-		<y-offset> 1.03 </y-offset>
-		<z-offset> 1.05 </z-offset>
-	</animation> -->
-	
-	<!-- <model>
-        <name>Mtext3d</name>
-        <path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/Mtext3d.xml</path>
-        <offsets>
-            <x-m>0.0005</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-            <pitch-deg>0</pitch-deg>
-        </offsets>
-    </model> -->
-	
-	<!-- EICAS -->
-	
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/EICAS/eicas.xml</path>
 		<overlay>
@@ -507,7 +455,7 @@
 			<pitch-deg>67</pitch-deg>
 		</offsets>
 	</model>
-	<!-- <model>
+	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/SidePanel2/sidepanel.xml</path>
 		<overlay>
 			<params>
@@ -520,7 +468,7 @@
 			<z-m>0.706</z-m>
 			<pitch-deg>-87</pitch-deg>
 		</offsets>
-	</model> -->
+	</model>
 	
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/SidePanel2/sidepanel.xml</path>
@@ -567,178 +515,7 @@
 			<pitch-deg>-82.0</pitch-deg>
 		</offsets>
 	</model>
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/CDU/cdu.xml</path>
-		<overlay>
-			<params>
-				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/cdu-left-lightmap.png</lightmap-texture-path>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-2.206</x-m>
-			<y-m>-0.155</y-m>
-			<z-m>0.633</z-m>
-			<pitch-deg>-89</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/CDU/cdu.xml</path>
-		<overlay>
-			<params>
-				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/cdu-right-lightmap.png</lightmap-texture-path>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-2.206</x-m>
-			<y-m>0.173</y-m>
-			<z-m>0.633</z-m>
-			<pitch-deg>-88</pitch-deg>
-		</offsets>
-	</model> -->
 	
-	<!-- Gear Lever --><!-- Not rendered -->
-	
-	<!-- <animation>
-		<type>pick</type>
-		<object-name>GearLever</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>property-toggle</command>
-				<property>controls/gear/gear-down</property>
-			</binding>
-		</action>
-	</animation>
-	<animation>
-		<type>rotate</type>
-		<object-name>GearLever</object-name>
-		<property>controls/gear/gear-down</property>
-		<factor>25</factor>
-		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
-		</axis>
-		<center>
-			<x-m>-1.86</x-m>
-			<y-m>0</y-m>
-			<z-m>0.674</z-m>
-		</center>
-	</animation> -->
-
-	<!-- GPWS overrides --><!-- Not Rendered -->
-	<!-- <animation>
-		<type>pick</type>
-		<object-name>GPWSTerrain</object-name>
-		<object-name>GPWSTerrainOff</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>property-toggle</command>
-				<property>instrumentation/mk-viii/inputs/discretes/gpws-inhibit</property>
-			</binding>
-		</action>
-	</animation>
-	<animation>
-		<type>translate</type>
-		<object-name>GPWSTerrain</object-name>
-		<object-name>GPWSTerrainOff</object-name>
-		<property>instrumentation/mk-viii/inputs/discretes/gpws-inhibit</property>
-		<factor>0.001</factor>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>-0.839099631</z>
-		</axis>
-	</animation>
-	<animation>
-		<type>select</type>
-		<object-name>GPWSTerrainOff</object-name>
-		<condition>
-			<property>instrumentation/mk-viii/inputs/discretes/gpws-inhibit</property>
-		</condition>
-	</animation>
-	<animation>
-		<type>pick</type>
-		<object-name>GPWSFlap</object-name>
-		<object-name>GPWSFlapOff</object-name>
-		<action>
-			<button>0</button>
-			<repeatable type="bool">false</repeatable>
-			<binding>
-				<command>property-toggle</command>
-				<property>instrumentation/mk-viii/inputs/discretes/momentary-flap-override</property>
-			</binding>
-		</action>
-	</animation>
-	<animation>
-		<type>translate</type>
-		<object-name>GPWSFlap</object-name>
-		<object-name>GPWSFlapOff</object-name>
-		<property>instrumentation/mk-viii/inputs/discretes/momentary-flap-override</property>
-		<factor>0.001</factor>
-		<axis>
-			<x>-1</x>
-			<y>0</y>
-			<z>-0.839099631</z>
-		</axis>
-	</animation>
-	<animation>
-		<type>select</type>
-		<object-name>GPWSFlapOff</object-name>
-		<condition>
-			<property>instrumentation/mk-viii/inputs/discretes/momentary-flap-override</property>
-		</condition>
-	</animation> -->
-	
-	
-	
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Stby-AI/ai.xml</path>
-		<overlay>
-			<params>
-				<indicated-pitch-deg>instrumentation/attitude-indicator[1]/indicated-pitch-deg</indicated-pitch-deg>
-				<indicated-roll-deg>instrumentation/attitude-indicator[1]/indicated-roll-deg</indicated-roll-deg>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.062</x-m>
-			<y-m>-0.208</y-m>
-			<z-m>0.953</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Stby-Alt/alt.xml</path>
-		<overlay>
-			<params>
-				<indicated-altitude-ft>instrumentation/altimeter[1]/indicated-altitude-ft</indicated-altitude-ft>
-				<setting-inhg>instrumentation/altimeter[1]/setting-inhg</setting-inhg>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.045</x-m>
-			<y-m>-0.208</y-m>
-			<z-m>0.857</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Stby-ASI/asi.xml</path>
-		<overlay>
-			<params>
-				<indicated-speed-kt>instrumentation/airspeed-indicator[1]/indicated-speed-kt</indicated-speed-kt>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.028</x-m>
-			<y-m>-0.208</y-m>
-			<z-m>0.761</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/TAS-SAT/tas-sat.xml</path>
 		<offsets>
@@ -760,7 +537,7 @@
 
 	<!-- Copilot-side instruments -->
 	
-	<!-- <model>
+	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/KLN90B/kln90b.xml</path>
 		<offsets>
 			<x-m>-3.000</x-m>
@@ -768,7 +545,7 @@
 			<z-m>1.120</z-m>
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
-	</model> -->
+	</model>
 	
 	<!-- PFD Primary Flight Display -->
 	
@@ -796,15 +573,6 @@
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
 	</model>
-	
-	<!-- MFD-CRJ Multifunction Flight Display -->
-	
-		<!-- <offsets>
-			<x-m>-3.045</x-m>
-			<y-m>-0.4062</y-m>
-			<z-m>0.8905</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets> -->
 		
 	<model>
 		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/center-mfd.xml</path>
@@ -815,63 +583,6 @@
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
 	</model>
-	
-			<!-- <x-m>-3.053</x-m>
-			<y-m>0.2455</y-m>
-			<z-m>0.917</z-m> -->
-	
-	<!-- <model>
-		<name>MFD_Center_border</name>
-		<path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/center-mfd.xml</path>
-		<offsets>
-			<x-m>-3.045</x-m>
-			<y-m>0.4062</y-m>
-			<z-m>0.8905</z-m>
-			<pitch-deg> -10 </pitch-deg>
-		</offsets>
-	</model> -->
-
-	<!-- <animation>
-		<type>scale</type>
-		<object-name>MFD_Center_border</object-name> 
-		<x-offset> 1.00 </x-offset>
-		<y-offset> 1.03 </y-offset>
-		<z-offset> 1.05 </z-offset>
-	</animation> -->
-	
-	<!-- <model>
-        <name>Mtext3d</name>
-        <path>Aircraft/DC-10-30/Models/Instruments/Center-mfd/Mtext3d.xml</path>
-        <offsets>
-            <x-m>0.0005</x-m>
-            <y-m>0</y-m>
-            <z-m>0</z-m>
-            <pitch-deg>0</pitch-deg>
-        </offsets>
-    </model> -->
-	
-	
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/mfd.xml</path>
-		<overlay>
-			<params>
-				<page>instrumentation/mfd[0]/page</page>
-				<tcas>instrumentation/mfd[0]/tcas</tcas>
-				<wx>instrumentation/mfd[0]/wx</wx>
-				<indicated-heading-deg>instrumentation/heading-indicator[0]/indicated-heading-deg</indicated-heading-deg>
-				<true-airspeed-kt>instrumentation/airspeed-indicator[0]/true-speed-kt</true-airspeed-kt>
-				<radar-range>instrumentation/radar[0]/range</radar-range>
-				<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/radar0.xml</radar-path>
-				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/mfd-right-lightmap.png</lightmap-texture-path>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.051</x-m>
-			<y-m>0.4135</y-m>
-			<z-m>0.917</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
 	
 	<!-- EICAS -->
 	
@@ -1118,168 +829,6 @@
 			<pitch-deg>-10</pitch-deg>
 		</offsets>
 	</model>
-	
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Clock/clock.xml</path>
-		<overlay>
-			<params>
-				<elapsed-sec>instrumentation/clock[1]/elapsed-sec</elapsed-sec>
-				<indicated-hour>instrumentation/clock[1]/indicated-hour</indicated-hour>
-				<indicated-min>instrumentation/clock[1]/indicated-min</indicated-min>
-				<indicated-timezone>instrumentation/clock[1]/indicated-timezone</indicated-timezone>
-				<local-hour>instrumentation/clock[1]/local-hour</local-hour>
-				<start-stop-action-script>
-				 if (DC10.chronometer2.running)
-				  {
-				  DC10.chronometer2.stop();
-				  }
-				 else
-				  {
-				  DC10.chronometer2.start();
-				  }
-				</start-stop-action-script>
-				<reset-action-script>
-				 DC10.chronometer2.reset();
-				</reset-action-script>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.065</x-m>
-			<y-m>0.264</y-m>
-			<z-m>0.969</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/ASI/asi.xml</path>
-		<overlay>
-			<params>
-				<indicated-speed-kt>instrumentation/airspeed-indicator[2]/indicated-speed-kt</indicated-speed-kt>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.063</x-m>
-			<y-m>0.353</y-m>
-			<z-m>0.962</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/DME/dme.xml</path>
-		<offsets>
-			<x-m>-3.051</x-m>
-			<y-m>0.353</y-m>
-			<z-m>0.892</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/NAV/nav.xml</path>
-		<overlay>
-			<params>
-				<indicated-heading-deg>instrumentation/heading-indicator/heading-magnetic-deg</indicated-heading-deg>
-				<nav-display n="0">instrumentation/nav-compass[1]/nav-display[0]</nav-display>
-				<nav-display n="1">instrumentation/nav-compass[1]/nav-display[1]</nav-display>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.039</x-m>
-			<y-m>0.353</y-m>
-			<z-m>0.826</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/DC-10-30/Models/Instruments/AI/ai.xml</path>
-		<overlay>
-			<params>
-				<indicated-pitch-deg>instrumentation/attitude-indicator[2]/indicated-pitch-deg</indicated-pitch-deg>
-				<indicated-roll-deg>instrumentation/attitude-indicator[2]/indicated-roll-deg</indicated-roll-deg>
-				<indicated-slip-skid>instrumentation/slip-skid-ball[1]/indicated-slip-skid</indicated-slip-skid>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.064</x-m>
-			<y-m>0.464</y-m>
-			<z-m>0.967</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/HSI/hsi.xml</path>
-		<overlay>
-			<params>
-				<dme>
-					<indicated-distance-nm>instrumentation/dme[0]/indicated-distance-nm</indicated-distance-nm>
-					<indicated-ground-speed-kt>instrumentation/dme[0]/indicated-ground-speed-kt</indicated-ground-speed-kt>
-				</dme>
-				<heading-indicator>
-					<indicated-heading-deg>instrumentation/heading-indicator/indicated-heading-deg</indicated-heading-deg>
-					<offset-deg>instrumentation/heading-indicator/offset-deg</offset-deg>
-				</heading-indicator>
-				<nav>
-					<from-flag>instrumentation/nav[0]/to-flag</from-flag>
-					<gs-needle-deflection>instrumentation/nav[0]/gs-needle-deflection</gs-needle-deflection>
-					<has-gs>instrumentation/nav[0]/has-gs</has-gs>
-					<heading-needle-deflection>instrumentation/nav[0]/heading-needle-deflection</heading-needle-deflection>
-					<in-range>instrumentation/nav[0]/in-range</in-range>
-					<heading-deg>instrumentation/nav[0]/heading-deg</heading-deg>
-					<selected-deg>instrumentation/nav[0]/radials/selected-deg</selected-deg>
-					<to-flag>instrumentation/nav[0]/to-flag</to-flag>
-				</nav>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.041</x-m>
-			<y-m>0.464</y-m>
-			<z-m>0.835</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Radio-Alt/radio-alt.xml</path>
-		<overlay>
-			<params>
-				<radar-altitude-ft>instrumentation/radar-altimeter[1]/radar-altitude-ft</radar-altitude-ft>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.064</x-m>
-			<y-m>0.547</y-m>
-			<z-m>0.961</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/VSI/vsi.xml</path>
-		<overlay>
-			<params>
-				<indicated-speed-fpm>instrumentation/vertical-speed-indicator[1]/indicated-speed-fpm</indicated-speed-fpm>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.048</x-m>
-			<y-m>0.571</y-m>
-			<z-m>0.871</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
-	<!-- <model>
-		<path>Aircraft/DC-10-30/Models/Instruments/Alt/alt.xml</path>
-		<overlay>
-			<params>
-				<indicated-altitude-ft>instrumentation/altimeter[2]/indicated-altitude-ft</indicated-altitude-ft>
-				<setting-inhg>instrumentation/altimeter[2]/setting-inhg</setting-inhg>
-			</params>
-		</overlay>
-		<offsets>
-			<x-m>-3.064</x-m>
-			<y-m>0.608</y-m>
-			<z-m>0.962</z-m>
-			<pitch-deg>-10</pitch-deg>
-		</offsets>
-	</model> -->
 
 	<!-- Panel lights -->
 	<model>

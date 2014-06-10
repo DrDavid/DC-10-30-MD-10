@@ -17,7 +17,7 @@
         </rating>
 
 	<model>
-	    <door>
+	    <!--<door>
 			<position-x-m type="float">-22.647</position-x-m>
 			<position-y-m type="float">-2.312</position-y-m>
 			<position-z-m type="float">4.746</position-z-m>
@@ -28,7 +28,7 @@
 			<position-y-m type="float">-2.944</position-y-m>
 			<position-z-m type="float">4.746</position-z-m>
 			<jetway-hood-deg type="float">1</jetway-hood-deg>
-	    </door>
+	    </door> -->
 	    <livery>
 			<registration type="string" />
 			<has-center-gear type="bool">true</has-center-gear>
@@ -39,6 +39,22 @@
 			<td type="double">0.00001</td>
 	    </pushback>
 	</model>
+	
+	<aircraft>
+		<jetway-pos>
+			<x-tra>-1</x-tra>
+			<z-rot>18</z-rot>
+			<y-rot>2</y-rot>
+			<hood-rot>0</hood-rot>
+		</jetway-pos>
+		<jetway2-pos>
+			<x-tra>2.1</x-tra>
+			<z-rot>52</z-rot>
+			<y-rot>3</y-rot>
+			<hood-rot>0</hood-rot>
+		</jetway2-pos>
+	</aircraft>
+
 
 	<instrumentation>
 	    <path>Aircraft/DC-10-30/Systems/DC-10-instrumentation.xml</path>
