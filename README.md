@@ -17,9 +17,9 @@ I am in the process of upgrading the instrumentation of the flightdeck as well a
 
 I am also generally following the historical upgrades that Boeing/McDonnell-Douglas made to create the MD-10. From Wikipedia:
 
-		MD-10 upgrade
+MD-10 upgrade
 
-		The MD-10 is retrofit cockpit upgrade to the DC-10 and a re-designation to MD-10. The upgrade included an Advanced Common Flightdeck (ACF) used on the MD-11 and was launched in 1996. The new cockpit eliminated the need for the flight engineer position and allowed common type rating with the MD-11. This allows companies such as FedEx Express, which operate both the MD-10 and MD-11, to have a common pilot pool for both aircraft. The MD-10 conversion now falls under the Boeing Converted Freighter program where Boeing's international affiliate companies perform the conversions.
+	The MD-10 is retrofit cockpit upgrade to the DC-10 and a re-designation to MD-10. The upgrade included an Advanced Common Flightdeck (ACF) used on the MD-11 and was launched in 1996. The new cockpit eliminated the need for the flight engineer position and allowed common type rating with the MD-11. This allows companies such as FedEx Express, which operate both the MD-10 and MD-11, to have a common pilot pool for both aircraft. The MD-10 conversion now falls under the Boeing Converted Freighter program where Boeing's international affiliate companies perform the conversions.
 
 Therefore,  the MD-10 is included in the name of the overall project.
 
