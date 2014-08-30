@@ -2,13 +2,13 @@
 
 <!-- McDonnell Douglas DC-10 -->
 <!-- Aircraft property settings specific to the KC-10A -->
-
+<!-- Revisions to tanker light settings: DrDavid and Jwocky, 28 Aug 14. -->
 <PropertyList include="DC-10-main.xml">
 
     <sim>
         <description>McDonnell Douglas KC-10A (tanker)</description>
         <flight-model>yasim</flight-model>
-        <aero>DC-10-30</aero>
+        <aero>DC-10-30ER</aero>
 
         <model>
             <path>Aircraft/DC-10-30/Models/KC-10A.xml</path>
@@ -48,7 +48,7 @@
     <instrumentation>
         <!-- Radar for air-to-air refueling capability (required for receiving fuel only) -->
         <radar>
-            <range type="int" archive="y">20</range>
+            <range type="int" archive="y">200</range>
             <minimized type="bool" archive="y">false</minimized>
         </radar>
     </instrumentation>

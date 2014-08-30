@@ -160,14 +160,6 @@ var init_switches = func{
     append(lights_input,props.globals.initNode("controls/lighting/landing-light-nose[1]",0,"BOOL"));
     append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light-nose[1]",0,"DOUBLE"));
     append(lights_load,1);
-
-    append(lights_input,props.globals.initNode("controls/lighting/landing-light-butt[0]",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light-butt[0]",0,"DOUBLE"));
-    append(lights_load,1);
-    append(lights_input,props.globals.initNode("controls/lighting/landing-light-butt[1]",0,"BOOL"));
-    append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light-butt[1]",0,"DOUBLE"));
-    append(lights_load,1);
-
     append(lights_input,props.globals.initNode("controls/lighting/landing-light-stbd",0,"BOOL"));
     append(lights_output,props.globals.initNode("systems/electrical/outputs/landing-light-stbd",0,"DOUBLE"));
     append(lights_load,1);

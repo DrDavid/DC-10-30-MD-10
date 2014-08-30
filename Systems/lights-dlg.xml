@@ -15,10 +15,16 @@
 		<text>
 			<label>Aircraft Lights</label>
 		</text>
-
+		
+		<hrule/>
+		
 		<empty>
 			<stretch>1</stretch>
 		</empty>
+		
+		<text>
+			<label>Landing Lights Must be on for Refuelling Boom!</label>
+		</text>
 
 		<button>
 			<pref-width>16</pref-width>
@@ -98,6 +104,15 @@
 					<value>2</value>
 				</binding>
 			</button>
+			<button>
+			
+				<legend>BOOM OPERATOR</legend>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/lighting/landing-light-nose-switch</property>
+					<value>3</value>
+				</binding>
+			</button>
 		</group>
 
 		<hrule />
@@ -120,17 +135,7 @@
 				<command>dialog-apply</command>
 			</binding>
 			<live>true</live>
-		</checkbox>
-
-		<!-- <checkbox>
-			<halign>left</halign>
-			<label>Wing lights</label>
-			<property>controls/lighting/wing-lights</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox> -->
+		</checkbox>                         
 
 		<checkbox>
 			<halign>left</halign>
@@ -185,13 +190,43 @@
 		<text>
 			<row>0</row>
 			<col>0</col>
-			<halign>left</halign>
+			<halign>center</halign>
 			<label>Flight deck displays</label>
 		</text>
 		<slider>
 			<row>1</row>
 			<col>0</col>
-			<halign>left</halign>
+			<halign>center</halign>
+			<pref-width>100</pref-width>
+			<property>controls/lighting/display-norm</property>
+			<step>0.05</step>
+			<min>0</min>
+			<max>1</max>
+			<live type="bool">true</live>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+		</slider>
+		
+
+		<property>controls/lighting/cabin-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		
+		<layout>table</layout>
+
+		<text>
+			<row>0</row>
+			<col>0</col>
+			<halign>center</halign>
+			<label>Flight deck displays</label>
+		</text>
+		<slider>
+			<row>1</row>
+			<col>0</col>
+			<halign>center</halign>
 			<pref-width>100</pref-width>
 			<property>controls/lighting/display-norm</property>
 			<step>0.05</step>
@@ -205,33 +240,16 @@
 		
 		<layout>vbox</layout>
 		
-		<!--  <text>
-			<halign>left</halign>
-			<label>Cabin lights</label>
-		</text>
-		<slider>
-			<halign>left</halign>
-			<pref-width>100</pref-width>
-			<property>controls/lighting/cabin-norm</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>1</max>
-			<live type="bool">true</live>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider> n-->
-		
 		<text>
 			<row>0</row>
 			<col>1</col>
-			<halign>left</halign>
+			<halign>center</halign>
 			<label>Overhead panel lights</label>
 		</text>
 		<slider>
 			<row>1</row>
 			<col>1</col>
-			<halign>left</halign>
+			<halign>center</halign>
 			<pref-width>100</pref-width>
 			<property>controls/lighting/panel-overhead-norm</property>
 			<step>0.05</step>

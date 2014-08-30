@@ -6,6 +6,16 @@
 <PropertyList>
 
 	<path>KC-10-boom.ac</path>
+	
+	<animation>
+		<type>material</type>
+		<object-name>Operator</object-name>
+		<emission>
+			<red>7.0</red>
+			<green>7.0</green>
+			<blue>7.0</blue>
+		</emission>
+	</animation>
 
 	<animation>
 		<name>Boom rotate</name>
@@ -29,6 +39,7 @@
 			<z-m>3.189</z-m>
 		</center>
 	</animation>
+	
 	<animation>
 		<name>Boom extend</name>
 		<type>translate</type>
@@ -48,12 +59,13 @@
 			<z2-m>4.759</z2-m>
 		</axis>
 	</animation>
+	
+	
 
 	<animation>
 		<name>Livery select</name>
 		<type>material</type>
 		<object-name>Boom</object-name>
-		<object-name>Operator</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>Blank-tanker.png</texture>

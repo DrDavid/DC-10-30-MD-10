@@ -16,31 +16,22 @@ setlistener("controls/lighting/landing-light-nose-switch", func(prop)
 {
 	var fuselage_lights = props.globals.getNode("controls/lighting/landing-light-nose[0]", 1);
 	var gear_lights = props.globals.getNode("controls/lighting/landing-light-nose[1]", 1);
-	var fuselage_lights_rear = props.globals.getNode("controls/lighting/landing-light-butt[0]", 1);
-	var gear_lights_rear = props.globals.getNode("controls/lighting/landing-light-butt[1]", 1);
-
 	var setting = prop.getValue();
 	if (setting == 1)
 	{
 		fuselage_lights.setBoolValue(0);
 		gear_lights.setBoolValue(1);
-		fuselage_lights_rear.setBoolValue(0);
-		gear_lights_rear.setBoolValue(1);
 	}
 	elsif (setting == 2)
 	{
 		fuselage_lights.setBoolValue(1);
 		gear_lights.setBoolValue(1);
-		fuselage_lights_rear.setBoolValue(1);
-		gear_lights_rear.setBoolValue(1);
 	}
 	else
 	{
 		prop.setValue(0);
 		fuselage_lights.setBoolValue(0);
 		gear_lights.setBoolValue(0);
-		fuselage_lights_rear.setBoolValue(0);
-		gear_lights_rear.setBoolValue(0);
 	}
 }, 1, 1);
 

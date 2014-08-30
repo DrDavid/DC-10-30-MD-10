@@ -7,7 +7,7 @@
 <PropertyList>
 
     <sim>
-	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades) 5H1N0B1 and Philosopher (Canvas MFD)</author>
+	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades), Jabberwocky, 5H1N0B1 and Philosopher (Canvas MFD)</author>
 	<status>gamma</status>
         <rating>
             <FDM type="int">2</FDM>
@@ -107,7 +107,7 @@
 	    <internal type="bool" archive="y">true</internal>
 	    <config>
 		<x-offset-m archive="y">-0.54</x-offset-m>
-		<y-offset-m archive="y">6.28</y-offset-m>
+		<y-offset-m archive="y">6.18</y-offset-m>
 		<z-offset-m archive="y">-25.1</z-offset-m>
 	    </config>
 	</view>

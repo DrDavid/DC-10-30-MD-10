@@ -214,7 +214,7 @@
 	</model>
 	<model>
 		<name>Port landing light (inside)</name>
-		<path>Aircraft/DC-10-30/Models/Lights/landing-wing-inside.xml</path>
+		<path>Aircraft/CRJ700-family/Models/Lights/landing-wing-inside.xml</path>
 		<overlay>
 			<params>
 				<source>systems/electrical/outputs/landing-light-port</source>
@@ -238,24 +238,6 @@
 	<model>
 		<name>Nose gear landing light</name>
 		<path>Aircraft/DC-10-30/Models/Lights/landing-nose-gear.xml</path>
-		<offsets>
-			<x-m>-19</x-m>
-			<y-m>0</y-m>
-			<z-m>1.894</z-m>
-		</offsets>
-	</model>
-	<model>
-		<name>Left rear landing light</name>
-		<path>Aircraft/DC-10-30/Models/Lights/landing-rear-fuselage.xml</path>
-		<offsets>
-			<x-m>-21.9</x-m>
-			<y-m>-2.15</y-m>
-			<z-m>3.8</z-m>
-		</offsets>
-	</model>
-	<model>
-		<name>Rear gear landing light</name>
-		<path>Aircraft/DC-10-30/Models/Lights/landing-rear-gear.xml</path>
 		<offsets>
 			<x-m>-19</x-m>
 			<y-m>0</y-m>
@@ -287,7 +269,7 @@
 	</model>
 	<model>
 		<name>Starboard landing light (inside)</name>
-		<path>Aircraft/DC-10-30family/Models/Lights/landing-wing-inside.xml</path>
+		<path>Aircraft/CRJ700-family/Models/Lights/landing-wing-inside.xml</path>
 		<overlay>
 			<params>
 				<source>systems/electrical/outputs/landing-light-stbd</source>
@@ -328,22 +310,20 @@
 			<z-m>2.15</z-m>
 		</offsets>
 	</model>
+	
 	<model>
 		<name>Formation light</name>
-		<path>Aircraft/DC-10-30/Models/Refuel-Lights/FormationLight.xml</path>
+		<path>Aircraft/DC-10-30/Models/Refuel Lights/Formation light.xml</path>
 		<overlay>
 			<params>
 				<source>systems/electrical/outputs/formationlight</source>
 			</params>
 		</overlay>
-			<x-m>17.371</x-m>
-			<y-m>0</y-m>
-			<z-m>3.189</z-m>
-		<!-- <offsets>
+		<offsets>
 			<x-m>8</x-m>
 			<y-m>0</y-m>
 			<z-m>2.15</z-m>
-		</offsets> -->
+		</offsets>
 	</model>
 
 	<model>
