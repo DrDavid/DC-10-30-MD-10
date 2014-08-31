@@ -8,7 +8,7 @@
 	<sim>
 		<description>McDonnell Douglas DC-10-30CF</description>
 		<flight-model>yasim</flight-model>
-		<aero>DC-10-30</aero>
+		<aero>DC-10-30ER</aero>
 
 		<model>
 			<path>Aircraft/DC-10-30/Models/DC-10-30CF.xml</path>

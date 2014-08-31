@@ -6,8 +6,8 @@
 
 <PropertyList>
 
-    <sim>
-	<author>Ryan Miller (3d), Ryan Miller (FDM), David Waggoner (Refits and Upgrades), Jabberwocky, 5H1N0B1 and Philosopher (Canvas MFD)</author>
+  <sim>
+	<author>Ryan Miller (3d and FDM), David Waggoner (Refits and Upgrades), Peter Brendt (Jabberwocky), 5H1N0B1 and Philosopher (Canvas MFD)</author>
 	<status>gamma</status>
         <rating>
             <FDM type="int">2</FDM>
@@ -172,7 +172,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				aircraft.livery.dialog.open();
+					aircraft.livery.dialog.open();
 			    </script>
 			</binding>
 		    </item>
@@ -188,7 +188,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				DC10.dialogs.lights.open();
+					DC10.dialogs.lights.open();
 			    </script>
 			</binding>
 		    </item>
@@ -197,7 +197,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				DC10.dialogs.doors.open();
+					DC10.dialogs.doors.open();
 			    </script>
 			</binding>
 		    </item>
@@ -206,7 +206,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				DC10.dialogs.failures.open();
+					DC10.dialogs.failures.open();
 			    </script>
 			</binding>
 		    </item>
@@ -215,14 +215,14 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				DC10.dialogs.tiller.open();
+					DC10.dialogs.tiller.open();
 			    </script>
 			</binding>
 		    </item>
 		</menu>
 	    </default>
 	</menubar>
-    </sim>
+  </sim>
 
     <autopilot>
 	<autoflight-serviceable type="bool">true</autoflight-serviceable>

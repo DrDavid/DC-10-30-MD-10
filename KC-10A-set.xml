@@ -3,6 +3,7 @@
 <!-- McDonnell Douglas DC-10 -->
 <!-- Aircraft property settings specific to the KC-10A -->
 <!-- Revisions to tanker light settings: DrDavid and Jwocky, 28 Aug 14. -->
+
 <PropertyList include="DC-10-main.xml">
 
     <sim>
@@ -13,7 +14,7 @@
         <model>
             <path>Aircraft/DC-10-30/Models/KC-10A.xml</path>
             <livery>
-                <file>Blank-tanker</file>
+                <file>USAF</file>
             </livery>
         </model>
 
@@ -30,7 +31,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-				DC10.doors.boom.toggle();
+					DC10.doors.boom.toggle();
 			    </script>
 			</binding>
 		    </item>

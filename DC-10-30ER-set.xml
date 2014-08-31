@@ -13,7 +13,7 @@
 		<model>
 			<path>Aircraft/DC-10-30/Models/DC-10-30.xml</path>
 			<livery>
-				<file>Blank</file>
+				<file>blank</file>
 			</livery>
 		</model>
 
