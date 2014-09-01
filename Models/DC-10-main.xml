@@ -287,7 +287,7 @@
 	</model>
 	<model>
 		<name>Starboard landing light (inside)</name>
-		<path>Aircraft/DC-10-30family/Models/Lights/landing-wing-inside.xml</path>
+		<path>Aircraft/DC-10-30/Models/Lights/landing-wing-inside.xml</path>
 		<overlay>
 			<params>
 				<source>systems/electrical/outputs/landing-light-stbd</source>
