@@ -7,7 +7,7 @@ FDM and Model: Ryan Miller
 
 Thanks to Hooray, Philosopher, 5H1N0B1, Syd Adams, Jabberwocky (Peter Brendt), and others for their major contributions!
 
-Peter Brendt (Jabberwocky/Jwocky) is now a contibutor to the project.
+Peter Brendt (Jabberwocky/Jwocky) is a contibutor and collaborator to the project.
 
 Project Description:
 
