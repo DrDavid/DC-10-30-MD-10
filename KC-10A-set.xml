@@ -9,7 +9,7 @@
     <sim>
         <description>McDonnell Douglas KC-10A (tanker)</description>
         <flight-model>yasim</flight-model>
-        <aero>DC-10-30ER</aero>
+        <aero>KC-10A</aero>
 
         <model>
             <path>Aircraft/DC-10-30/Models/KC-10A.xml</path>
