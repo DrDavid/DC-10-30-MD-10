@@ -687,7 +687,7 @@
 			<file>Aircraft/b1900d/Models/Instruments/KLN90B/kln90b.nas</file>
 		</systems>
 		<m877>
-			<file>Aircraft/Instruments-3d/clock/M877/m877.nas</file>
+			<file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
 		</m877>
     </nasal>
 
