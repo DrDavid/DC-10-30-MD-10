@@ -65,9 +65,9 @@
 	</sound>
 	
 	<panel>
-			<!-- Note: Requires 737-300 for instruments -->
-			<path>Aircraft/DC-10-30/Panels/DC-10-30-panel.xml</path>
-			<visibility type="bool">false</visibility>
+		<!-- Note: Requires 737-300 for instruments -->
+		<path>Aircraft/DC-10-30/Panels/DC-10-30-panel.xml</path>
+		<visibility type="bool">false</visibility>
 		</panel>
 
 	<systems>
@@ -172,7 +172,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-					aircraft.livery.dialog.open();
+				aircraft.livery.dialog.open();
 			    </script>
 			</binding>
 		    </item>
@@ -188,7 +188,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-					DC10.dialogs.lights.open();
+				DC10.dialogs.lights.open();
 			    </script>
 			</binding>
 		    </item>
@@ -197,7 +197,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-					DC10.dialogs.doors.open();
+				DC10.dialogs.doors.open();
 			    </script>
 			</binding>
 		    </item>
@@ -206,7 +206,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-					DC10.dialogs.failures.open();
+				DC10.dialogs.failures.open();
 			    </script>
 			</binding>
 		    </item>
@@ -215,7 +215,7 @@
 			<binding>
 			    <command>nasal</command>
 			    <script>
-					DC10.dialogs.tiller.open();
+				DC10.dialogs.tiller.open();
 			    </script>
 			</binding>
 		    </item>
@@ -229,6 +229,9 @@
 	<autoflight-serviceable type="bool">true</autoflight-serviceable>
 	<autothrottle-serviceable type="bool">true</autothrottle-serviceable>
 	<autothrottle-serviceable type="bool">true</autothrottle-serviceable>
+	<settings>
+		<heading-bug-deg type="int">0</heading-bug-deg>
+	</settings>
     </autopilot>
 
     <consumables>
@@ -396,6 +399,16 @@
 	    <decision-height-ft type="double">700</decision-height-ft>
 	    <serviceable type="bool">true</serviceable>
 	</radar-altimeter>
+	<radar>
+		<display-controls>
+			<tcas>
+				0
+			</tcas>
+			<WX>
+				0
+			</WX>
+		</display-controls>
+	</radar>
 	<radar-altimeter>
 	    <decision-height-ft type="double">700</decision-height-ft>
 	    <serviceable type="bool">true</serviceable>
@@ -535,6 +548,16 @@
 			<file-prefix type="string">Sounds/mk-viii/</file-prefix>
 	    </voice>
 	</mk-viii>
+	<mfd n="0">
+		<page>0</page>
+		<tcas>0></tcas>
+		<wx>0</wx>
+	</mfd>
+	<mfd n="1">
+		<page>0</page>
+		<tcas>0></tcas>
+		<wx>0</wx>
+	</mfd>
     </instrumentation>
 
     <systems>
@@ -674,7 +697,9 @@
 		</interactive_cdu>
 		<DC10>
 			<file>Aircraft/DC-10-30/Models/Instruments/Center-mfd/ND.nas</file>
-			<file>Aircraft/777/Models/InstrumentsCenter-mfd/mfd.nas</file>
+
+			<file>Aircraft/DC-10-30/Models/Instruments/Center-mfd/mfd.nas</file>
+
 			<file>Aircraft/DC-10-30/Nasal/electrical.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/engines.nas</file>
 			<file>Aircraft/DC-10-30/Nasal/effects.nas</file>
@@ -684,10 +709,10 @@
 			<file>Aircraft/DC-10-30/Nasal/systems.nas</file>
 		</DC10>
 		<systems>
-			<file>Aircraft/b1900d/Models/Instruments/KLN90B/kln90b.nas</file>
+			<file>Aircraft/DC-10-30/Models/Instruments/KLN90B/kln90b.nas</file>
 		</systems>
 		<m877>
-			<file>Aircraft/Instruments-3d/clock/M877/m877.nas</file>
+			<file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
 		</m877>
     </nasal>
 

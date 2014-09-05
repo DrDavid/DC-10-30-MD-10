@@ -52,8 +52,8 @@ var mfdListener = nil;
             });
             m.screen.addPlacement({"node": placement});
             m.group = m.screen.createGroup();
-            m.engDisplay = canvas_eng.new(m.group);
-            m.fctlDisplay = canvas_fctl.new(m.group);
+#            m.engDisplay = canvas_eng.new(m.group);
+#            m.fctlDisplay = canvas_fctl.new(m.group);
             m.displayPanel(m.defaultPanel);
             return m;
         },
@@ -63,10 +63,10 @@ var mfdListener = nil;
                 me.display.stop();
             }
             if (me.panel != panel) {
-                if (panel == "eng") 
-                    me.display = me.engDisplay;
-                elsif (panel == "fctl")
-                    me.display = me.fctlDisplay;
+#                if (panel == "eng") 
+#                    me.display = me.engDisplay;
+#                elsif (panel == "fctl")
+                me.display = me.fctlDisplay;
                 me.display.start();
                 me.panel = panel;
             }

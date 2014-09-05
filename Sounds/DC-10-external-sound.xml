@@ -368,7 +368,7 @@
         <!-- Landing gear -->
         <gear>
             <name>Gear in transit</name>
-            <path>Sounds/flaps.wav</path>
+            <path>Sounds/Flaps.wav</path>
             <mode>in-transit</mode>
             <property>gear/gear[0]/position-norm</property>
         </gear>
