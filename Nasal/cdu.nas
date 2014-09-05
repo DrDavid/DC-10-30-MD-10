@@ -506,20 +506,20 @@ var RouteManager =
 	{
 		rm_input.setValue("@" ~ v);
 	},
-	_load_selector: gui.FileSelector.new(func(path)
-	{
-		rm_node.getNode("file-path", 1).setValue(path.getValue());
-		RouteManager.input("load");
-	}, "Load flight-plan", "Load"),
+#	_load_selector: gui.FileSelector.new(func(path)
+#	{
+#		rm_node.getNode("file-path", 1).setValue(path.getValue());
+#		RouteManager.input("load");
+#	}, "Load flight-plan", "Load"),
 	load_flightplan: func
 	{
 		RouteManager._load_selector.open();
 	},
-	_save_selector: gui.FileSelector.new(func(path)
-	{
-		rm_node.getNode("file-path", 1).setValue(path.getValue());
-		RouteManager.input("save");
-	}, "Save flight-plan", "Save"),
+#	_save_selector: gui.FileSelector.new(func(path)
+#	{
+#		rm_node.getNode("file-path", 1).setValue(path.getValue());
+#		RouteManager.input("save");
+#	}, "Save flight-plan", "Save"),
 	save_flightplan: func
 	{
 		RouteManager._save_selector.open();

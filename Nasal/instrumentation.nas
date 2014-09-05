@@ -134,9 +134,28 @@ var Mfd =
 		{
 			var page = v.getValue();
 			var tcas = props.globals.getNode("instrumentation/radar[" ~ m.number ~ "]/display-controls/tcas");
-			tcas.setBoolValue(page == 3 ? m.tcas.getBoolValue() : 0);
-			var wx = props.globals.getNode("instrumentation/radar[" ~ m.number ~ "]/display-controls/WX");
-			wx.setBoolValue(page == 6 ? m.wx.getBoolValue() : 0);
+			var result="false";
+			var key1="instrumentation/mfd["~ n ~"]/tcas";
+			var key2="instrumentation/radar[" ~ m.number ~ "]/display-controls/WX";
+
+			if (page==3) {
+				result="true";
+			} else {
+				result=getprop("instrumentation/mfd[" ~ n ~ "]/tcas")==0;
+			}
+			setprop(key1, result);
+
+			result="false";
+#			var wx = props.globals.getNode("instrumentation/radar[" ~ m.number ~ "]/display-controls/WX");
+#			wx.setBoolValue(page == 6 ? m.wx.getBoolValue() : 0);
+
+			if (page==6) {
+				result="true";
+			} else {
+				result=getprop("instrumentation/mfd[" ~ n ~ "]/wx")==0;
+			}
+			setprop(key2, result);
+
 		}, 1, 0);
 		return m;
 	}

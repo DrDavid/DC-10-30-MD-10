@@ -5,7 +5,7 @@
 
 <PropertyList>
 
-	<path>MFD.ac</path>
+	<path>mfd.ac</path>
 
 	<params>
 		<page>instrumentation/MFD-CRJ/page</page>
@@ -15,7 +15,7 @@
 		<true-airspeed-kt>instrumentation/airspeed-indicator/true-speed-kt</true-airspeed-kt>
 		<radar-range>instrumentation/radar/range</radar-range>
 		<radar-path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/radar0.xml</radar-path>
-		<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps[0]/MFD-left-lightmap.png</lightmap-texture-path>
+		<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/MFD-left-lightmap.png</lightmap-texture-path>
 	</params>
 	<big-rose-min-bug-deg type="double">-52</big-rose-min-bug-deg>
 	<big-rose-max-bug-deg type="double">52</big-rose-max-bug-deg>

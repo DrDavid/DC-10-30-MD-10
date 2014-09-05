@@ -37,7 +37,7 @@
 				<indicated-vertical-speed-fpm>instrumentation/vertical-speed-indicator[0]/indicated-speed-fpm</indicated-vertical-speed-fpm>
 				<radar-altitude-ft>instrumentation/radar-altimeter[0]/radar-altitude-ft</radar-altitude-ft>
 				<altimeter-setting-inhg>instrumentation/altimeter[0]/setting-inhg</altimeter-setting-inhg>
-				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps[0]/pfd-left-lightmap.png</lightmap-texture-path>
+				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/pfd-left-lightmap.png</lightmap-texture-path>
 			</params>
 		</overlay>
 		<offsets>
@@ -563,7 +563,7 @@
 				<indicated-vertical-speed-fpm>instrumentation/vertical-speed-indicator[1]/indicated-speed-fpm</indicated-vertical-speed-fpm>
 				<radar-altitude-ft>instrumentation/radar-altimeter[1]/radar-altitude-ft</radar-altitude-ft>
 				<altimeter-setting-inhg>instrumentation/altimeter[1]/setting-inhg</altimeter-setting-inhg>
-				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps[1]/pfd-right-lightmap.png</lightmap-texture-path>
+				<lightmap-texture-path>Aircraft/DC-10-30/Models/Effects/Lightmaps/pfd-right-lightmap.png</lightmap-texture-path>
 			</params>
 		</overlay>
 		<offsets>
