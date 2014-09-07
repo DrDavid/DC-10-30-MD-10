@@ -9,6 +9,19 @@
 		<description>McDonnell Douglas DC-10-30</description>
 		<flight-model>yasim</flight-model>
 		<aero>DC-10-30ER</aero>
+		
+		<status>pre-beta</status>
+
+		<rating>
+			<FDM type="int">4</FDM>
+			<systems type="int">4</systems>
+			<cockpit type="int">4</cockpit>
+			<model type="int">4</model>
+		</rating>
+
+		<startup>
+			<splash-texture>Aircraft/DC-10-30/DC-10-30-Splash2.jpg</splash-texture>
+		</startup>
 
 		<model>
 			<path>Aircraft/DC-10-30/Models/DC-10-30.xml</path>
