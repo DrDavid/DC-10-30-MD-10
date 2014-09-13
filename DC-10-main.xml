@@ -61,7 +61,7 @@
 		<!-- Note: Requires 737-300 for instruments -->
 		<path>Aircraft/DC-10-30/Panels/DC-10-30-panel.xml</path>
 		<visibility type="bool">false</visibility>
-		</panel>
+	</panel>
 
 	<systems>
 	    <!-- Disable the generic electrical system -->
@@ -212,6 +212,15 @@
 			    </script>
 			</binding>
 		    </item>
+			<item>
+			<label>Announcements</label>
+			<binding>
+				<command>nasal</command>
+                <script>
+                var mal = gui.Dialog.new("/sim/gui/dialogs/DC10/menu/dialog", "Aircraft/DC-10-30/Systems/announcements-dlg.xml"); mal.open();
+                </script>
+            </binding>
+            </item>
 		</menu>
 	    </default>
 	</menubar>
