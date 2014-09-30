@@ -1,4 +1,4 @@
-# McDonnell Douglas DC-10
+# McDonnell Douglas MD-10
 # Nasal door system
 #########################
 

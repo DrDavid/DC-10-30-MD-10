@@ -73,7 +73,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l1.open();
+						MD10.doors.pax_l1.open();
 					</script>
 				</binding>
 			</button>
@@ -89,7 +89,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l1.close();
+						MD10.doors.pax_l1.close();
 					</script>
 				</binding>
 			</button>
@@ -111,7 +111,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l2.open();
+						MD10.doors.pax_l2.open();
 					</script>
 				</binding>
 			</button>
@@ -127,7 +127,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l2.close();
+						MD10.doors.pax_l2.close();
 					</script>
 				</binding>
 			</button>
@@ -149,7 +149,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l3.open();
+						MD10.doors.pax_l3.open();
 					</script>
 				</binding>
 			</button>
@@ -165,7 +165,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l3.close();
+						MD10.doors.pax_l3.close();
 					</script>
 				</binding>
 			</button>
@@ -187,7 +187,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l4.open();
+						MD10.doors.pax_l4.open();
 					</script>
 				</binding>
 			</button>
@@ -203,7 +203,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_l4.close();
+						MD10.doors.pax_l4.close();
 					</script>
 				</binding>
 			</button>
@@ -231,7 +231,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r1.open();
+						MD10.doors.pax_r1.open();
 					</script>
 				</binding>
 			</button>
@@ -247,7 +247,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r1.close();
+						MD10.doors.pax_r1.close();
 					</script>
 				</binding>
 			</button>
@@ -269,7 +269,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r2.open();
+						MD10.doors.pax_r2.open();
 					</script>
 				</binding>
 			</button>
@@ -285,7 +285,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r2.close();
+						MD10.doors.pax_r2.close();
 					</script>
 				</binding>
 			</button>
@@ -307,7 +307,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r3.open();
+						MD10.doors.pax_r3.open();
 					</script>
 				</binding>
 			</button>
@@ -323,7 +323,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r3.close();
+						MD10.doors.pax_r3.close();
 					</script>
 				</binding>
 			</button>
@@ -345,7 +345,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r4.open();
+						MD10.doors.pax_r4.open();
 					</script>
 				</binding>
 			</button>
@@ -361,7 +361,7 @@
 				<binding>
 					<command>nasal</command>
 					<script>
-						DC10.doors.pax_r4.close();
+						MD10.doors.pax_r4.close();
 					</script>
 				</binding>
 			</button>
@@ -381,15 +381,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -402,15 +402,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -422,7 +422,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_fwd.open();
+					MD10.doors.cargo_fwd.open();
 				</script>
 			</binding>
 		</button>
@@ -434,15 +434,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -454,7 +454,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_fwd.close();
+					MD10.doors.cargo_fwd.close();
 				</script>
 			</binding>
 		</button>
@@ -467,15 +467,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -488,15 +488,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -508,7 +508,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_aft.open();
+					MD10.doors.cargo_aft.open();
 				</script>
 			</binding>
 		</button>
@@ -520,15 +520,15 @@
 				<or>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30</value>
+						<value>MD-10P</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30ER</value>
+						<value>MD-10ACF</value>
 					</equals>
 					<equals>
 						<property>sim/aircraft</property>
-						<value>DC-10-30CF</value>
+						<value>MD-10F</value>
 					</equals>
 				</or>
 			</visible>
@@ -540,7 +540,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_aft.close();
+					MD10.doors.cargo_aft.close();
 				</script>
 			</binding>
 		</button>
@@ -574,7 +574,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_main.open();
+					MD10.doors.cargo_main.open();
 				</script>
 			</binding>
 		</button>
@@ -596,7 +596,7 @@
 			<binding>
 				<command>nasal</command>
 				<script>
-					DC10.doors.cargo_main.close();
+					MD10.doors.cargo_main.close();
 				</script>
 			</binding>
 		</button>

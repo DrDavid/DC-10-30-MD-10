@@ -8,7 +8,7 @@
 
   <model>
     <name>text3dEADI</name>
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_3dtextARM.xml</path>
+    <path>Aircraft/MD-10/ModelsInstruments/MFD/mfd_3dtextARM.xml</path>
     <offsets>
       <x-m> -0.008 </x-m>
       <y-m>  0.000 </y-m>

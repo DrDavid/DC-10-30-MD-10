@@ -285,7 +285,7 @@
 		<rumble>
 			<name>rumble</name>
 			<mode>looped</mode>
-			<path>Aircraft/737-300/Sounds/roll.wav</path>
+			<path>Aircraft/DC-10-30/Sounds/roll.wav</path>
 			<condition>
 				<or>
 					<property>/gear/gear[0]/wow</property>
@@ -368,7 +368,7 @@
         <!-- Landing gear -->
         <gear>
             <name>Gear in transit</name>
-            <path>Sounds/Flaps.wav</path>
+            <path>Sounds/flaps.wav</path>
             <mode>in-transit</mode>
             <property>gear/gear[0]/position-norm</property>
         </gear>

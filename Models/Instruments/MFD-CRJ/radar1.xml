@@ -3,7 +3,7 @@
 <PropertyList>
 
 	<name>Radar</name>
-	<background>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/black-bg.png</background>
+	<background>Aircraft/MD-10/Models/Instruments/MFD-CRJ/black-bg.png</background>
 	<w>256</w>
 	<h>256</h>
 	<instruments>
@@ -22,7 +22,7 @@
 					<h>220</h>
 					<emissive type="bool">true</emissive>
 					<texture>
-						<path>Aircraft/DC-10-30/Models/Instruments/MFD-CRJ/wxradar/od_wxradar1.png</path>
+						<path>Aircraft/MD-10/Models/Instruments/MFD-CRJ/wxradar/od_wxradar1.png</path>
 						<x1>0</x1>
 						<y1>0</y1>
 						<x2>1</x2>

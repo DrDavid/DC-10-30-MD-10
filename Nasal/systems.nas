@@ -1,4 +1,4 @@
-# McDonnell Douglas DC-10
+# McDonnell Douglas MD-10
 # Aircraft systems
 #########################
 
@@ -23,7 +23,7 @@ var systems =
 	loopid: -1,
 	init: func
 	{
-		print("DC-10 aircraft systems ... initialized");
+		print("MD-10 aircraft systems ... initialized");
 		systems.loopid += 1;
 		settimer(func systems.update(systems.loopid), 0);
 	},
@@ -33,7 +33,7 @@ var systems =
 	},
 	reinit: func
 	{
-		print("DC-10 aircraft systems ... reinitialized");
+		print("MD-10 aircraft systems ... reinitialized");
 		setprop("sim/model/start-idling", 0);
 		systems.stop();
 		settimer(func systems.update(systems.loopid), 0);
@@ -366,12 +366,12 @@ var update_gear = func
 ## Aircraft-specific dialogs
 var dialogs =
 {
-	autopilot: gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/DC-10-30/Systems/autopilot-dlg.xml"),
-	radio: gui.Dialog.new("sim/gui/dialogs/radio-stack/dialog", "Aircraft/DC-10-30/Systems/radio-stack-dlg.xml"),
-	lights: gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/DC-10-30/Systems/lights-dlg.xml"),
-	doors: gui.Dialog.new("sim/gui/dialogs/doors/dialog", "Aircraft/DC-10-30/Systems/doors-dlg.xml"),
-	failures: gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/DC-10-30/Systems/failures-dlg.xml"),
-	tiller: gui.Dialog.new("sim/gui/dialogs/tiller/dialog", "Aircraft/DC-10-30/Systems/tiller-dlg.xml")
+	autopilot: gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/MD-10/Systems/autopilot-dlg.xml"),
+	radio: gui.Dialog.new("sim/gui/dialogs/radio-stack/dialog", "Aircraft/MD-10/Systems/radio-stack-dlg.xml"),
+	lights: gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/MD-10/Systems/lights-dlg.xml"),
+	doors: gui.Dialog.new("sim/gui/dialogs/doors/dialog", "Aircraft/MD-10/Systems/doors-dlg.xml"),
+	failures: gui.Dialog.new("sim/gui/dialogs/failures/dialog", "Aircraft/MD-10/Systems/failures-dlg.xml"),
+	tiller: gui.Dialog.new("sim/gui/dialogs/tiller/dialog", "Aircraft/MD-10/Systems/tiller-dlg.xml")
 };
-gui.menuBind("autopilot", "DC10.dialogs.autopilot.open();");
-gui.menuBind("radio", "DC10.dialogs.radio.open();");
+gui.menuBind("autopilot", "MD10.dialogs.autopilot.open();");
+gui.menuBind("radio", "MD10.dialogs.radio.open();");

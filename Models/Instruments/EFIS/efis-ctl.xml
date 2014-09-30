@@ -16,19 +16,6 @@ Syd Adams
 		<type>material</type>
 		<object-name>efisletters</object-name>
 		<condition>
-			<greater-than-equals>
-				<property>systems/electrical/outputs/panel-lights</property>
-				<value>15</value>
-			</greater-than-equals>
-		</condition>
-		<emission>
-			<red alias="../../../panel-marking-emit/red" />
-			<green alias="../../../panel-marking-emit/green" />
-			<blue alias="../../../panel-marking-emit/blue" />
-			<factor-prop>controls/lighting/panel-overhead-norm</factor-prop>
-		</emission>
-		
-		<!--<condition>
 			 <greater-than>
 				<property>systems/electrical/CPT-FLT-INST</property>
 				<value>24.0</value>
@@ -38,8 +25,8 @@ Syd Adams
 			<red>0.2</red>
 			<green>0.6</green>
 			<blue>0.2</blue>
-			<factor-prop>controls/lighting/panel-flood-intensity</factor-prop>
-		</emission> -->
+			<factor-prop>controls/lighting/panel-flood-intencity</factor-prop>
+		</emission>
 	</animation>
 
     <animation>
@@ -108,7 +95,7 @@ Syd Adams
         <type>rotate</type>
         <object-name>MODE.knob</object-name>
         <object-name>MODE.knob.001</object-name>
-        <property>instrumentation/efis/MFD-CRJ/mode-num</property>
+        <property>instrumentation/efis/mfd/mode-num</property>
         <interpolation>
             <entry><ind>0</ind><dep>0</dep></entry>
             <entry><ind>1</ind><dep>30</dep></entry>
@@ -172,7 +159,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("center",0);</script>
+                <script>b777.Efis.ctl_func("center",0);</script>
             </binding>
         </action>
     </animation>
@@ -338,7 +325,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("rhvor",1);</script>
+                <script>b777.Efis.ctl_func("rhvor",1);</script>
             </binding>
         </action>
     </animation>
@@ -351,7 +338,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("rhvor",-1);</script>
+                <script>b777.Efis.ctl_func("rhvor",-1);</script>
             </binding>
         </action>
     </animation>
@@ -364,7 +351,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("lhvor",1);</script>
+                <script>b777.Efis.ctl_func("lhvor",1);</script>
             </binding>
         </action>
     </animation>
@@ -377,7 +364,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("lhvor",-1);</script>
+                <script>b777.Efis.ctl_func("lhvor",-1);</script>
             </binding>
         </action>
     </animation>
@@ -395,7 +382,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("range",1);</script>
+                <script>b777.Efis.ctl_func("range",1);</script>
             </binding>
         </action>
     </animation>
@@ -413,7 +400,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("range",-1);</script>
+                <script>b777.Efis.ctl_func("range",-1);</script>
             </binding>
         </action>
     </animation>
@@ -432,7 +419,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("range",1);</script>
+                <script>b777.Efis.ctl_func("range",1);</script>
             </binding>
         </action>
     </animation>
@@ -451,7 +438,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("range",-1);</script>
+                <script>b777.Efis.ctl_func("range",-1);</script>
             </binding>
         </action>
     </animation>
@@ -492,7 +479,7 @@ Syd Adams
         </action>
     </animation>
 
-    <animation>
+     <animation>
         <type>pick</type>
         <object-name>baro.inc</object-name>
         <object-name>baro.dec</object-name>
@@ -511,7 +498,7 @@ Syd Adams
         </action>
     </animation>
 
-    <animation>
+   <animation>
         <type>pick</type>
         <object-name>inhg.inc</object-name>
         <object-name>inhg.dec</object-name>
@@ -633,7 +620,7 @@ Syd Adams
 					<property>instrumentation/inputs/setting-std</property>
 				</condition>
                 <command>property-assign</command>
-                <property>instrumentation/efis/inhg-previous</property>
+                <property>instrumentation/efis/inhg-previos</property>
                 <property>instrumentation/altimeter/setting-inhg</property>
             </binding>
 			<binding>
@@ -650,7 +637,7 @@ Syd Adams
 				</condition>
                 <command>property-assign</command>
                 <property>instrumentation/altimeter/setting-inhg</property>
-                <property>instrumentation/efis/inhg-previous</property>
+                <property>instrumentation/efis/inhg-previos</property>
             </binding>
             <binding>
                 <command>nasal</command>
@@ -667,7 +654,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("mins",0);</script>
+                <script>b777.Efis.ctl_func("mins",0);</script>
             </binding>
         </action>
     </animation>
@@ -680,7 +667,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("mins",1);</script>
+                <script>b777.Efis.ctl_func("mins",1);</script>
             </binding>
         </action>
     </animation>
@@ -693,7 +680,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("mins",0);</script>
+                <script>b777.Efis.ctl_func("mins",0);</script>
             </binding>
         </action>
     </animation>
@@ -706,7 +693,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("mins",1);</script>
+                <script>b777.Efis.ctl_func("mins",1);</script>
             </binding>
         </action>
     </animation>
@@ -720,7 +707,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("dh",10);</script>
+                <script>b777.Efis.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -734,7 +721,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("dh",-10);</script>
+                <script>b777.Efis.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -749,7 +736,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("dh",10);</script>
+                <script>b777.Efis.ctl_func("dh",10);</script>
             </binding>
         </action>
     </animation>
@@ -764,7 +751,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("dh",-10);</script>
+                <script>b777.Efis.ctl_func("dh",-10);</script>
             </binding>
         </action>
     </animation>
@@ -778,7 +765,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("dh",0);</script>
+                <script>b777.Efis.ctl_func("dh",0);</script>
             </binding>
         </action>
     </animation>
@@ -794,7 +781,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("display",1);</script>
+                <script>b777.Efis.ctl_func("display",1);</script>
             </binding>
         </action>
     </animation>
@@ -810,7 +797,7 @@ Syd Adams
             <repeatable>true</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("display",-1);</script>
+                <script>b777.Efis.ctl_func("display",-1);</script>
             </binding>
         </action>
     </animation>
@@ -827,7 +814,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("display",1);</script>
+                <script>b777.Efis.ctl_func("display",1);</script>
             </binding>
         </action>
     </animation>
@@ -843,7 +830,7 @@ Syd Adams
             <repeatable>false</repeatable>
             <binding>
                 <command>nasal</command>
-                <script>DC10.Efis.ctl_func("display",-1);</script>
+                <script>b777.Efis.ctl_func("display",-1);</script>
             </binding>
         </action>
     </animation>

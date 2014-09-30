@@ -1,9 +1,9 @@
-# McDonnell Douglas DC-10
+# McDonnell Douglas MD-10
 # Nasal effects
 #########################
 
 ## Livery select
-aircraft.livery.init("Aircraft/DC-10-30/Models/Liveries/" ~ getprop("sim/aircraft"));
+aircraft.livery.init("Aircraft/MD-10/Models/Liveries/" ~ getprop("sim/aero"));
 
 ## Lights
 var top_beacon_light = aircraft.light.new("sim/model/lights/beacon[0]", [0.05, 4.05], "controls/lighting/beacon");
@@ -48,8 +48,8 @@ setlistener("controls/lighting/landing-light-nose-switch", func(prop)
 var tiresmoke_system = aircraft.tyresmoke_system.new(0, 2, 4, 5);
 aircraft.rain.init();
 
-## Configuration switcher stuff (DC-10-30CF only)
-if (getprop("sim/aircraft") == "DC-10-30CF")
+## Configuration switcher stuff (MD-10CF only)
+if (getprop("sim/aircraft") == "MD-10CF")
 {
 	# Switching function
 	var switch_configuration = func
@@ -65,7 +65,7 @@ if (getprop("sim/aircraft") == "DC-10-30CF")
 			else
 			{
 				config.setValue("pax");
-				DC10.doors.cargo_main.setpos(0);
+				MD10.doors.cargo_main.setpos(0);
 			}
 		}
 	};

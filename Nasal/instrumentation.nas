@@ -1,10 +1,10 @@
 ## Bombardier CRJ700 series
 ## Aircraft instrumentation
-## Modified for DC-10-30 series
+## Modified for MD-10 series
 ###########################
 
 ## Control display unit (CDU)
-var cdu1 = interactive_cdu.Cdu.new("instrumentation/cdu", "Aircraft/DC-10-30/Systems/DC-10-cdu.xml");
+var cdu1 = interactive_cdu.Cdu.new("instrumentation/cdu", "Aircraft/MD-10/Systems/MD-10-cdu.xml");
 
 ## Autopilot
 # Basic roll mode controller
@@ -117,8 +117,8 @@ var Eicas_messages =
 		return 1;
 	}
 };
-var eicas_messages_page1 = Eicas_messages.new("instrumentation/eicas-messages/page[0]", "Aircraft/DC-10-30/Systems/DC-10-EICAS-1.xml", 12);
-var eicas_messages_page2 = Eicas_messages.new("instrumentation/eicas-messages/page[1]", "Aircraft/DC-10-30/Systems/DC-10-EICAS-2.xml", 13);
+var eicas_messages_page1 = Eicas_messages.new("instrumentation/eicas-messages/page[0]", "Aircraft/MD-10/Systems/MD-10-EICAS-1.xml", 12);
+var eicas_messages_page2 = Eicas_messages.new("instrumentation/eicas-messages/page[1]", "Aircraft/MD-10/Systems/MD-10-EICAS-2.xml", 13);
 
 ## MFDs
 var Mfd =

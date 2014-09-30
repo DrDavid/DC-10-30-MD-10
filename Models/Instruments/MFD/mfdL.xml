@@ -39,7 +39,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/glass_shader.png</texture>
+    <texture>Aircraft/MD-10/Models/Instruments/MFD/glass_shader.png</texture>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -442,7 +442,7 @@
   <!--EADI-->
   <model>
     <name>EADI</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_eadi.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/mfd_eadi.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeL</property>
@@ -459,7 +459,7 @@
   <!--ARM-->
   <model>
     <name>ARM</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_arm.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/mfd_arm.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeL</property>

@@ -3533,7 +3533,7 @@
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
+		<inherits-from>Aircraft/MD-10/Models/Effects/MD10lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">

@@ -349,7 +349,7 @@
 
 	<!-- Lightmaps -->
 	<effect>
-		<inherits-from>Aircraft/DC-10-30/Models/Effects/DC10lightmap</inherits-from>
+		<inherits-from>Aircraft/MD-10/Models/Effects/MD10lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
 			<lightmap-factor n="0">
@@ -362,7 +362,7 @@
 				<use alias="../../lightmap-factor-prop" />
 			</lightmap-factor>
 			<texture n="3">
-				<image>Aircraft/DC-10-30/Models/Effects/Lightmaps/standby-lightmap.png</image>
+				<image>Aircraft/MD-10/Models/Effects/Lightmaps/standby-lightmap.png</image>
 			</texture>
 		</parameters>
 		<object-name>Bezel</object-name>

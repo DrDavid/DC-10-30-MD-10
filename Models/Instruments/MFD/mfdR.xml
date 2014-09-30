@@ -39,7 +39,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/glass_shader.png</texture>
+    <texture>Aircraft/MD-10/Models/Instruments/MFD/glass_shader.png</texture>
     <condition>
       <not><property>sim/rendering/rembrandt/enabled</property></not>
     </condition>
@@ -141,7 +141,7 @@
       </binding> 
       <binding>
         <command>nasal</command>
-          <script>mirage2000.nav_src_set();</script>
+          <script>MD10.nav_src_set();</script>
           <condition>
             <equals>
               <property>/instrumentation/mfd/modeR</property>
@@ -165,7 +165,7 @@
       </binding>   
       <binding>
         <command>nasal</command>
-        <script>mirage2000.rmi1_src_set();</script>
+        <script>MD10.rmi1_src_set();</script>
         <condition>
           <equals> 
             <property>/instrumentation/mfd/modeR</property>           
@@ -203,7 +203,7 @@
       </binding>   
       <binding>
         <command>nasal</command>
-        <script>mirage2000.rmi2_src_set();</script>
+        <script>MD10.rmi2_src_set();</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -213,7 +213,7 @@
       </binding>
       <binding>        
         <command>nasal</command>
-        <script>mirage2000.frequ_swapL()</script>
+        <script>MD10.frequ_swapL()</script>
         <condition>
           <equals> 
             <property>/instrumentation/mfd/modeR</property>           
@@ -237,7 +237,7 @@
       </binding>        
       <binding>        
         <command>nasal</command>
-        <script>mirage2000.frequ_swapR()</script>
+        <script>MD10.frequ_swapR()</script>
         <condition>
           <equals> 
             <property>/instrumentation/mfd/modeR</property>           
@@ -300,7 +300,7 @@
       </binding>  
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustR(10)</script>
+        <script>MD.frequ_adjustR(10)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -324,7 +324,7 @@
       </binding> 
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustR(-10)</script>
+        <script>MD10.frequ_adjustR(-10)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -349,7 +349,7 @@
       </binding>  
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustR(1)</script>
+        <script>MD10.frequ_adjustR(1)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -373,7 +373,7 @@
       </binding> 
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustR(-1)</script>
+        <script>MD10.frequ_adjustR(-1)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -444,7 +444,7 @@
       </binding>  
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustL(1)</script>
+        <script>MD10.frequ_adjustL(1)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -468,7 +468,7 @@
       </binding> 
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustL(-1)</script>
+        <script>MD10.frequ_adjustL(-1)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -493,7 +493,7 @@
       </binding>  
       <binding>
         <command>nasal</command>
-        <script>mirage2000.frequ_adjustL(0.05)</script>
+        <script>MD10.frequ_adjustL(0.05)</script>
         <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -517,7 +517,7 @@
       </binding> 
         <binding>
          <command>nasal</command>
-         <script>mirage2000.frequ_adjustL(-0.05)</script>
+         <script>MD10.frequ_adjustL(-0.05)</script>
          <condition>
           <equals>
             <property>/instrumentation/mfd/modeR</property>
@@ -1046,7 +1046,7 @@
   <!--EHSI-->
   <model>
     <name>EHSI</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_ehsi.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/mfd_ehsi.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeR</property>
@@ -1063,7 +1063,7 @@
   <!--RMU-->
   <model>
     <name>RMU</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_rmu.xml</path>
+    <path>Aircraft/MD-10/Models/MFD/mfd_rmu.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeR</property>
@@ -1080,7 +1080,7 @@
   <!--RWR-->
   <model>
     <name>RWR</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/rwr/rwr.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/rwr/rwr.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeR</property>
@@ -1097,7 +1097,7 @@
   <!--EICAS-->
   <model>
     <name>EICAS</name>    
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_eicas.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/mfd_eicas.xml</path>
     <condition>
       <equals>
         <property>/instrumentation/mfd/modeR</property>

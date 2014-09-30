@@ -7,7 +7,7 @@
   <!-- *************Text*************** -->
   <model>
     <name>text3dEHSI</name>
-    <path>Aircraft/Mirage-2000/Models/Interior/Panel/Instruments/Mfd/mfd_3dtextEHSI.xml</path>
+    <path>Aircraft/MD-10/Models/Instruments/MFD/mfd_3dtextEHSI.xml</path>
     <offsets>
       <x-m>-0.008</x-m>
       <y-m>0</y-m>

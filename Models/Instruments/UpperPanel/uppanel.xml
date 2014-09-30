@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Bombardier CRJ700 series --> <!-- Adapted to DC-10-30 Series -->
+<!-- Bombardier CRJ700 series --> <!-- Adapted to MD-10 Series -->
 <!-- Upper panel -->
 
 <PropertyList>
@@ -24,7 +24,7 @@
 
 	<model>
 		<name>Compass</name>
-		<path>Aircraft/DC-10-30/Models/Instruments/Compass/compass.xml</path>
+		<path>Aircraft/MD-10/Models/Instruments/Compass/compass.xml</path>
 		<offsets>
 			<x-m>0.003</x-m>
 			<y-m>0</y-m>
