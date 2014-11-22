@@ -57,11 +57,11 @@
 			<path>Aircraft/MD-10/Sounds/MD-10-external-sound.xml</path>
 		</sound>
 	
-		<panel>
-			<!-- Note: Requires 737-300 for instruments NOT ANYMORE -->
-			<path>Aircraft/MD-10/Panels/MD-10-30-panel.xml</path>
+		<!-- panel>
+			<!## Note: Requires 737-300 for instruments NOT ANYMORE ##>
+			<path>Aircraft/MD-10/Panels/MD-10-panel.xml</path>
 			<visibility type="bool">false</visibility>
-		</panel>
+		</panel -->
 
 		<systems>
 			<!-- Disable the generic electrical system -->
@@ -518,8 +518,8 @@
 		</efis>
 
 		<nd>
-			<radar-texture-path type="string">Aircraft/MD-10/Models/Instruments/Center-mfd/radar.png</radar-texture-path>
-			<symbol-texture-path type="string">Aircraft/MD-10/Models/Instruments/Center-mfd/symbols.png</symbol-texture-path>
+			<radar-texture-path type="string">Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/radar.png</radar-texture-path>
+			<symbol-texture-path type="string">Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/symbols.png</symbol-texture-path>
 			<font>
 				<color>
 					<red type="float">   0.7 </red>
@@ -779,17 +779,21 @@
 			<file>Aircraft/MD-10/Nasal/instrumentation.nas</file>
 			<file>Aircraft/MD-10/Nasal/multiplayer.nas</file>
 			<file>Aircraft/MD-10/Nasal/systems.nas</file>
-			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/ND.nas</file>
-			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/mfd.nas</file>
-			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/fctl.nas</file>
-			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/eng.nas</file>
+			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/NDNew.nas</file>
+			<!-- file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/ND.nas</file -->
+			<!-- file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/fctl.nas</file -->
+			<!-- file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/eng.nas</file -->
+			<!-- file>Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/mfd.nas</file -->
 		</MD10>
 		<systems>
-			<file>Aircraft/MD-10/Models/Instruments/KLN90B/kln90b.nas</file>
+			<file>Aircraft/MD-10/Models/Flightdeck/Instruments/KLN90B/kln90b.nas</file>
 		</systems>
 		<m877>
 			<file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
 		</m877>
+		<common>
+			<file>Aircraft/MD-10/Common/canvas_nd/navscreen.mfd</file>
+		</common>
     </nasal>
 
 </PropertyList>

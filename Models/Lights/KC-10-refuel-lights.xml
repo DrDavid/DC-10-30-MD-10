@@ -53,7 +53,7 @@
 
   <!-- Tail Refuel-Lights -->
   <model>
-    <path>Aircraft/MD-10/Models/Lights/TailLight.xml</path>
+    <path>Aircraft/MD-10/Models/Refuel-Lights/TailLight.xml</path>
     <!-- <offsets>
       <x-m>  9.791 </x-m>
       <y-m>  0.003 </y-m>

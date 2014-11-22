@@ -26,7 +26,7 @@
 	<control-setting axis="/controls/flight/slats" value="1.0" />
 	<control-setting axis="/controls/gear/gear-down" value="1.0" />
 	<solve-weight idx="0" weight="1200.0" />
-	<solve-weight idx="1" weight="150700.0" />
+	<solve-weight idx="1" weight="142700.0" />
     </approach>
 
     <cruise speed="530" alt="37000" fuel="0.8">
@@ -37,7 +37,7 @@
 	<control-setting axis="/controls/flight/slats" value="0.0" />
 	<control-setting axis="/controls/gear/gear-down" value="0.0" />
 	<solve-weight idx="0" weight="1200.0" />
-	<solve-weight idx="1" weight="150700.0" />
+	<solve-weight idx="1" weight="142700.0" />
     </cruise>
 
     <cockpit x="25.1" y="0.54" z="6.06" />

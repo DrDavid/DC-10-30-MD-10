@@ -43,8 +43,12 @@ var engN2Rpm = {
 		.set("stroke", me.MaxColor);
 	},
 
-	update: func(n2rpm) {
-		var n2angle=(-me.MaxAngle/me.MaxRpm)*n2rpm;
+	update: func(n2rpm) {	
+		var n2r=1;
+		if (n2rpm!=nil) {
+			n2r=n2rpm;
+		}
+		var n2angle=(-me.MaxAngle/me.MaxRpm)*n2r;
 		var n2angleRad = (n2angle * math.pi)/180;
 		var cx = math.cos(n2angleRad)*me.R -me.R;
 		var cy = -math.sin(n2angleRad)*me.R;
@@ -104,28 +108,46 @@ var indicator = {
         },
 
 	inRange : func(value) {
-		return (value > me.minOperating and value < me.maxOperating);
+		var val=(me.maxOperating-me.minOperating)/2+me.minOperating;
+		if (value!=nil) {
+			val=value;
+		}
+		return (val > me.minOperating and val < me.maxOperating);
         },
 
 	inCaution : func(value) {
-		return (value <= me.minOperating or value >= me.maxOperating);
+		var val=(me.maxOperating-me.minOperating)/2+me.minOperating;
+		if (value!=nil) {
+			val=value;
+		}
+		return (val <= me.minOperating or val >= me.maxOperating);
         },
 
-	inLimit : func(value){return (value <= me.minLimit or value >= me.maxLimit);}, updateColor : func(color) {
+	inLimit : func(value) {
+			var val=(me.maxOperating-me.minOperating)/2+me.minOperating;
+			if (value!=nil) {
+				val=value;
+			}
+		return (val <= me.minLimit or val >= me.maxLimit);
+		}, updateColor : func(color) {
 		me.pointer.set("stroke", color);
 		me.pointer.set("fill", color);
 		me.valueLabel.set("fill", color);
 	},
 
         update : func(value) {
-		if (me.inRange(value)) me.updateColor(me.NormalColor);			
-		if (me.inCaution(value)) me.updateColor(me.CautionColor);
-		if (me.inLimit(value)) me.updateColor(me.LimitColor);
+		var val=(me.maxOperating-me.minOperating)/2+me.minOperating;
+		if (value!=nil) {
+			val=value;
+		}
+		if (me.inRange(val)) me.updateColor(me.NormalColor);			
+		if (me.inCaution(val)) me.updateColor(me.CautionColor);
+		if (me.inLimit(val)) me.updateColor(me.LimitColor);
 
-		me.valueLabel.setText(sprintf("%3.0f",value));
-		var tempForCursorPos = value; 
-		if (value > me.maxDisplayed) tempForCursorPos = me.maxDisplayed;
-		if (value < me.minDisplayed) tempForCursorPos = me.minDisplayed;
+		me.valueLabel.setText(sprintf("%3.0f",val));
+		var tempForCursorPos = val; 
+		if (val > me.maxDisplayed) tempForCursorPos = me.maxDisplayed;
+		if (val < me.minDisplayed) tempForCursorPos = me.minDisplayed;
 		me.pointer.setTranslation(0,-me.linearFactor*(tempForCursorPos-me.minDisplayed));
 	}
 }; # End of indicator
@@ -155,17 +177,22 @@ var oilPressureIndicator = {
 var canvas_eng = {
 	eng0n2rpm: {},
 	eng1n2rpm: {},
+	eng2n2rpm: {},
 	eng0fuelFlowPph: {},
 	eng1fuelFlowPph: {},
+	eng2fuelFlowPph: {},
 	eng0OilTempIndic: {},
 	eng1OilTempIndic: {},
+	eng2OilTempIndic: {},
 	eng0OilPressureIndic : {},
 	eng1OilPressIndic : {},
+	eng2OilPressIndic : {},
 	eng0OilQuantity : {},
 	eng1OilQuantity : {},
+	eng2OilQuantity : {},
 
 	new : func(canvas_group) {
-		var m = { parents: [canvas_eng, MfDPanel.new("eng",canvas_group,"Aircraft/777/Models/Instruments/MFD/eng.svg",canvas_eng.update)] };
+		var m = { parents: [canvas_eng, MfDPanel.new("eng",canvas_group,"Aircraft/MD-10/Models/Flightdeck/Instruments/Center-mfd/eng.svg",canvas_eng.update)] };
 		m.context = m;
 		m.initSvgIds(m.group);
 		return m;
@@ -174,17 +201,22 @@ var canvas_eng = {
 	initSvgIds: func(group) {
 		me.eng0fuelFlowPph = group.getElementById("eng0fuelFlowPph");
 		me.eng1fuelFlowPph = group.getElementById("eng1fuelFlowPph");
+		me.eng2fuelFlowPph = group.getElementById("eng2fuelFlowPph");
 		me.eng0n2rpm = engN2Rpm.new(group,273,165,"eng0N2");
 		me.eng1n2rpm = engN2Rpm.new(group,518,165,"eng1N2");
+		me.eng2n2rpm = engN2Rpm.new(group,763,165,"eng2N2");
 
 		me.eng0OilTempIndic = oilTemperatureIndicator.new(group,0);
 		me.eng1OilTempIndic = oilTemperatureIndicator.new(group,1);
+		me.eng2OilTempIndic = oilTemperatureIndicator.new(group,2);
 
 		me.eng0OilPressIndic = oilPressureIndicator.new(group,0);
 		me.eng1OilPressIndic = oilPressureIndicator.new(group,1);
+		me.eng2OilPressIndic = oilPressureIndicator.new(group,2);
 
 		me.eng0OilQuantity = group.getElementById("eng0OilQuantity");
 		me.eng1OilQuantity = group.getElementById("eng1OilQuantity");
+		me.eng2OilQuantity = group.getElementById("eng2OilQuantity");
 	},
 
 	update: func() {

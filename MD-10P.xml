@@ -11,7 +11,7 @@
     http://www.airliners.net/aircraft-data/stats.main?id=279
 -->
 
-<airplane mass="266191">
+<airplane mass="266191" version="YASIM_VERSION_CURRENT">
     <!-- Approach configuration based on stall chart http://tinypic.com/hsqd1l.jpg (from airliners.net thread http://www.airliners.net/aviation-forums/tech_ops/read.main/135496/) -->
     <approach speed="132" aoa="4.0" fuel="0.2">
 	<control-setting axis="/controls/engines/engine[0]/throttle-lever" value="0.6" />

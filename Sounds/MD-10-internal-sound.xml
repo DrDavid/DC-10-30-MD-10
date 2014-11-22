@@ -9,7 +9,7 @@
 	<!-- Engine 1 sound -->
 	<engine>
 		<name>Engine 1 sound 1 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet.wav</path>
+		<path>737NG-jet.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -33,7 +33,7 @@
 	</engine>
 	<engine>
 		<name>Engine 1 sound 2 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet2.wav</path>
+		<path>737NG-jet2.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -53,7 +53,7 @@
 	<!-- Engine 2 sound -->
 	<engine>
 		<name>Engine 2 sound 1 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet.wav</path>
+		<path>737NG-jet.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -77,7 +77,7 @@
 	</engine>
 	<engine>
 		<name>Engine 2 sound 2 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet2.wav</path>
+		<path>737NG-jet2.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -97,7 +97,7 @@
 	<!-- Engine 3 sound -->
 	<engine>
 		<name>Engine 3 sound 1 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet.wav</path>
+		<path>737NG-jet.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -121,7 +121,7 @@
 	</engine>
 	<engine>
 		<name>Engine 3 sound 2 internal</name>
-		<path>Aircraft/MD-10/Sounds/737NG-jet2.wav</path>
+		<path>737NG-jet2.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<and>
@@ -142,7 +142,7 @@
 	<rain>
 		<name>rain</name>
 		<mode>looped</mode>
-		<path>Aircraft/MD-10/Sounds/rain.wav</path>
+		<path>rain.wav</path>
 		<condition>
 			<greater-than>
 				<property>/environment/metar/rain-norm</property>
@@ -167,7 +167,7 @@
 	
 	<announcement>
 		<name>welcome</name>
-		<path>Aircraft/MD-10/Sounds/welcome.wav</path>
+		<path>welcome.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/welcome</property>
@@ -186,7 +186,7 @@
 
 	<announcement>
 		<name>safety</name>
-		<path>Aircraft/MD-10/Sounds/safety.wav</path>
+		<path>safety.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/safety</property>
@@ -205,7 +205,7 @@
 
 	<announcement>
 		<name>cruise</name>
-		<path>Aircraft/MD-10/Sounds/cruise.wav</path>
+		<path>cruise.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/cruise</property>
@@ -224,7 +224,7 @@
 
 	<announcement>
 		<name>climb</name>
-		<path>Aircraft/MD-10/Sounds/climb.wav</path>
+		<path>climb.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/climb</property>
@@ -243,7 +243,7 @@
 
 	<announcement>
 		<name>cruise-seatbelt</name>
-		<path>Aircraft/MD-10/Sounds/cruise-seatbelt.wav</path>
+		<path>cruise-seatbelt.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/cruise-seatbelt</property>
@@ -262,7 +262,7 @@
 
 	<announcement>
 		<name>turbulence</name>
-		<path>Aircraft/MD-10/Sounds/turbulence.wav</path>
+		<path>turbulence.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/turbulence</property>
@@ -281,7 +281,7 @@
 
 	<announcement>
 		<name>descent</name>
-		<path>Aircraft/MD-10/Sounds/descent.wav</path>
+		<path>descent.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/descent</property>
@@ -300,7 +300,7 @@
 
 	<announcement>
 		<name>land</name>
-		<path>Aircraft/MD-10/Sounds/land.wav</path>
+		<path>land.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/land</property>
@@ -319,7 +319,7 @@
 
 	<announcement>
 		<name>gate</name>
-		<path>Aircraft/MD-10/Sounds/gate.wav</path>
+		<path>gate.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/gate</property>
@@ -338,7 +338,7 @@
 
 	<announcement>
 		<name>emergency</name>
-		<path>Aircraft/MD-10/Sounds/emergency.wav</path>
+		<path>emergency.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/emergency</property>
@@ -357,7 +357,7 @@
 
 	<announcement>
 		<name>pretakeoff</name>
-		<path>Aircraft/MD-10/Sounds/pretakeoff.wav</path>
+		<path>pretakeoff.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/pretakeoff</property>
@@ -376,7 +376,7 @@
 
 	<announcement>
 		<name>boarding2</name>
-		<path>Aircraft/MD-10/Sounds/music2.wav</path>
+		<path>music2.wav</path>
 		<mode>looped</mode>
 		<condition>
 			<property>sim/sound/music2</property>
@@ -395,7 +395,7 @@
 
 	<announcement>
 		<name>brace</name>
-		<path>Aircraft/MD-10/Sounds/brace.wav</path>
+		<path>brace.wav</path>
 		<mode>once</mode>
 		<condition>
 			<property>sim/sound/brace</property>
